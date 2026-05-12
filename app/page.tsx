@@ -14,6 +14,7 @@ export default function Home() {
       <main>
         <HeaderMobile />
         <HeaderDesktop />
+        
         <BannerHero />
         <div className="py-7 lg:py-40 flex flex-col items-center justify-center">
           <div className="flex flex-col gap-24.5">
