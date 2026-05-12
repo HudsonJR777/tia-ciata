@@ -6,7 +6,6 @@ export const cardInfoBadgesHistoryHistoria = {
     "Cozinha",
     "Quintal",
     "Diplomacia do Samba",
-    "Salão",
     "Cozinha",
     "Diplomacia do Samba",
   ],
