@@ -50,7 +50,7 @@ export default function Card({
           {badges.map((badge, index) => (
             <div key={index} className="bg-[#E8E8E8] rounded">
               <div className="py-0.5 px-1">
-                <p className="text-[#000000] text-[12px]">{badge.title}</p>
+                <p className="text-[#000000] text-[16px]">{badge.title}</p>
               </div>
             </div>
           ))}
