@@ -7,6 +7,7 @@ export default function BannerHero() {
       <Image
         src={bannerHero}
         alt="Banner Matriarca do Samba"
+        priority
         className="h-full w-full object-cover"
       />
     </section>

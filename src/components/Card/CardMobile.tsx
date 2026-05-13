@@ -32,6 +32,7 @@ export default function CardMobile({
           alt={title}
           width={400}
           height={300}
+          priority
           sizes="(max-width: 640px) 100vw, 400px"
         />
       </div>
@@ -44,6 +45,7 @@ export default function CardMobile({
             alt="ícone do card"
             width={14}
             height={15}
+            priority
           />
           <p className="uppercase text-[8px] font-semibold text-[#E8E8E8] leading-tight line-clamp-2">
             {title}

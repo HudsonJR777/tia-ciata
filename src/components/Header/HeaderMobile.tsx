@@ -18,6 +18,7 @@ export default function HeaderMobile() {
             alt="logo do menu header"
             width={120}
             height={100}
+            priority
             className="h-10 w-10"
           />
         </a>

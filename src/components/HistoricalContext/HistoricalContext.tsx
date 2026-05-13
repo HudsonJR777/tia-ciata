@@ -11,6 +11,7 @@ export default function HistoricalContext() {
           src={HistoricalContextImage}
           alt="banner cultural showcase"
           height={380}
+          priority
         />
         <div>
           <p className="text-[#FFFFFF] text-[12px] lg:text-3xl">

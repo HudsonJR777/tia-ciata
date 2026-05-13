@@ -13,6 +13,7 @@ export default function HeaderDesktop() {
             alt="logo do menu header"
             width={200}
             height={80}
+            priority
           />
         </a>
 

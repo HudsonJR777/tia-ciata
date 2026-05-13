@@ -22,6 +22,7 @@ export default function HistoricalContextResistance() {
           alt="Colagem mulher negra"
           width={600}
           height={300}
+          priority
           sizes="(max-width: 640px) 100vw, 400px"
         />
       </div>

@@ -12,6 +12,7 @@ export default function CulturalShowcaseHistoria() {
         src={CulturalShowcaseOne}
         alt="banner cultural showcase"
         height={148}
+        priority
       />
       <div className="block md:hidden">
         <div className="flex flex-col items-center gap-5 lg:hidden">

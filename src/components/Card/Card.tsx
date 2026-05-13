@@ -32,6 +32,7 @@ export default function Card({
           alt={title}
           width={623}
           height={324}
+          priority
         />
       </div>
 
@@ -43,6 +44,7 @@ export default function Card({
             alt="ícone do card"
             width={16}
             height={17}
+            priority
           />
           <p className="uppercase text-2xlxl text-[#E8E8E8]">{title}</p>
         </div>
