@@ -13,6 +13,10 @@ import legado from "./CulturalShowcaseLegado.png";
 import CulturalShowcaseIdentity from "./CulturalShowcaseIdentity.png";
 import HistoricalContextImage from "./HistoricalContextImage.png";
 import mulherNegraColagem from "./mulherNegraColagem 1.svg";
+import ImageIntroducao from "./div.relative.png";
+import SistemasDeInformaçãoLogo from "./SistemasDeInformaçãoLogo.svg";
+import HudsonImagem from "./HudsonImagem.jpeg";
+import ALivingLegacy from "./ALivingLegacy.png";
 
 export {
   logoHeader,
@@ -30,4 +34,8 @@ export {
   CulturalShowcaseIdentity,
   HistoricalContextImage,
   mulherNegraColagem,
+  ImageIntroducao,
+  SistemasDeInformaçãoLogo,
+  HudsonImagem,
+  ALivingLegacy,
 };
