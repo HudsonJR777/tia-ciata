@@ -14,9 +14,6 @@ export default function Footer() {
                 className="w-full object-contain"
               />
             </div>
-            <p className="max-w-[240px] text-[11px] leading-5 text-white/60 sm:text-xs">
-              A força feminina que fundou uma identidade
-            </p>
           </div>
 
           <div className="flex flex-col items-center gap-6 sm:gap-8 lg:px-8 lg:border-r lg:border-white/10 lg:py-0">
