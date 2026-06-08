@@ -17,6 +17,9 @@ import ImageIntroducao from "./div.relative.png";
 import SistemasDeInformaçãoLogo from "./SistemasDeInformaçãoLogo.svg";
 import HudsonImagem from "./HudsonImagem.jpeg";
 import ALivingLegacy from "./ALivingLegacy.png";
+import viesAlgoritmico from "./viesAlgoritmico.png";
+import bannerSobre from "./bannerSobre.png";
+import extras from "./extras.png";
 
 export {
   logoHeader,
