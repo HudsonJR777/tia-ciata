@@ -63,36 +63,40 @@ export default function MeetTheTeamCard({
     <article
       className="
         overflow-hidden
-        rounded-[36px]
+        rounded-[40px] 
         bg-[#F3EFF2]
         shadow-lg
         w-full
-        max-w-[360px]
+        max-w-[310px] 
+        h-[375px]
+        flex
+        flex-col
+        justify-between
       "
     >
-      <div className="flex flex-col items-center px-8 pt-8 pb-6">
-        {/* FOTO */}
-        <div className="relative h-[260px] w-[260px] overflow-hidden rounded-[28px] border-[12px] border-white bg-[#E5E5E5] md:h-[300px] md:w-[300px] lg:h-[340px] lg:w-[340px]">
+      <div className="flex flex-col items-center px-6 pt-6 pb-4 flex-1 justify-between">
+        <div className="relative h-[180px] w-[180px] overflow-hidden rounded-[28px] border-[10px] border-white bg-[#E5E5E5]">
           <Image
             src={image}
-            alt="Hudson"
+            alt={name}
             fill
             priority
+            sizes="180px"
             className="object-cover"
           />
         </div>
 
-        <div className="mt-6 text-center">
-          <h2 className="text-[38px] font-bold uppercase leading-none text-[#292929]">
+        <div className="mt-4 text-center w-full px-2">
+          <h2 className="text-[28px] font-bold uppercase leading-tight text-[#292929] truncate">
             {name}
           </h2>
 
-          <p className="mt-2 text-[22px] font-medium text-[#777777]">
+          <p className="mt-1 text-[18px] font-medium text-[#777777] truncate">
             {functition}
           </p>
         </div>
 
-        <div className="mt-8 flex justify-center gap-4">
+        <div className="mt-4 flex justify-center gap-3">
           {socialLinks.map((item) => (
             <a
               key={item.label}
@@ -100,8 +104,8 @@ export default function MeetTheTeamCard({
               aria-label={item.label}
               className="
                 flex
-                h-12
-                w-12
+                h-10
+                w-10
                 items-center
                 justify-center
                 rounded-full
@@ -117,7 +121,7 @@ export default function MeetTheTeamCard({
           ))}
         </div>
       </div>
-      <div className="flex h-6 w-full overflow-hidden">
+      <div className="flex h-5 w-full overflow-hidden">
         <div className="flex-1 bg-[#E6D8CC]" />
         <div className="flex-1 bg-[#FF4438]" />
         <div className="flex-1 bg-[#6CC04A]" />

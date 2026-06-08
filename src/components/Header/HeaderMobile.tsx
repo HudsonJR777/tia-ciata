@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import logoHeader from "../../assets/logoHeader.svg";
-import { headerInfos } from "./headerInfos";
+import { navItems, ROUTES } from "../../constants/routes";
 import ChapterAccordion from "../BannerHero/ChapterAccordeon";
 
 export default function HeaderMobile() {
@@ -12,7 +13,7 @@ export default function HeaderMobile() {
   return (
     <header className="lg:hidden sticky top-0 z-50 bg-[#070707] text-white border-b border-white/10">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <a href="#" className="flex items-center gap-2">
+        <Link href={ROUTES.HOME} className="flex items-center gap-2">
           <Image
             src={logoHeader}
             alt="logo do menu header"
@@ -21,7 +22,7 @@ export default function HeaderMobile() {
             priority
             className="h-10 w-10"
           />
-        </a>
+        </Link>
 
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -50,7 +51,7 @@ export default function HeaderMobile() {
       {isOpen && (
         <nav className="border-t border-white/10 bg-black/95">
           <ul className="flex flex-col gap-0 text-sm font-medium uppercase text-white/80">
-            {headerInfos.map((item, index) =>
+            {navItems.map((item, index) =>
               item.title === "Capítulos" ? (
                 <li
                   key={index}
@@ -65,13 +66,13 @@ export default function HeaderMobile() {
                   key={index}
                   className="border-b border-white/5 last:border-b-0"
                 >
-                  <a
-                    href={`#${item.title.toLowerCase()}`}
+                  <Link
+                    href={item.href}
                     className="block px-4 py-3 transition hover:bg-white/10 hover:text-white"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.title}
-                  </a>
+                  </Link>
                 </li>
               ),
             )}

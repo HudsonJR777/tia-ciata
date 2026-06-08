@@ -9,16 +9,11 @@ import CulturalShowcaseIdentity from "@/src/components/CulturalShowcase/Cultural
 import HistoricalContext from "@/src/components/HistoricalContext/HistoricalContext";
 import Introduction from "@/src/components/Introduction/Introduction";
 import MeetTheTeam from "@/src/components/MeetTheTeam/MeetTheTeam";
-import ALivingLegacy from "@/src/components/ALivingLegacy/ALivingLegacy";
-import Footer from "@/src/components/Footer/Footer";
 
 export default function Home() {
   return (
     <div className="dark:bg-black">
       <main>
-        <HeaderMobile />
-        <HeaderDesktop />
-
         <BannerHero />
         <div className="py-7 lg:py-40 flex flex-col items-center justify-center">
           <div className="flex flex-col gap-24.5">
@@ -32,15 +27,9 @@ export default function Home() {
           <div className="py-7 lg:py-4">
             <Introduction />
           </div>
-          {/* <div className="py-7 lg:py-4">
+          <div className="py-7 lg:py-4">
             <MeetTheTeam />
-          </div> */}
-        </div>
-        <div className="py-[80px]">
-          <ALivingLegacy />
-        </div>
-        <div className="py-[80px]">
-          <Footer />
+          </div>
         </div>
       </main>
     </div>

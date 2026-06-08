@@ -31,4 +31,24 @@ export const MeetTheTeamCardInfos = [
     name: "Hudson",
     function: "Front End",
   },
+  {
+    image: HudsonImagem,
+    name: "Hudson",
+    function: "Back End",
+  },
+  {
+    image: HudsonImagem,
+    name: "Hudson",
+    function: "Back End",
+  },
+  {
+    image: HudsonImagem,
+    name: "Hudson",
+    function: "Back End",
+  },
+  {
+    image: HudsonImagem,
+    name: "Hudson",
+    function: "Back End",
+  },
 ];
