@@ -1,6 +1,9 @@
 import { StaticImageData } from "next/image";
+import chapterImage1 from "@/src/assets/galeriaAcervo1.png";
 import chapterImage2 from "@/src/assets/galeriaAcervo2.png";
-import chapterImage3 from "@/src/assets/CulturalShowcaseOne.png";
+import chapterImage3 from "@/src/assets/galeriaAcervo3.png";
+import chapterImage4 from "@/src/assets/galeriaAcervo4.png";
+import chapterImage5 from "@/src/assets/galeriaAcervo5.jpg";
 import capituloFotoCortico from "@/src/assets/capituloFotoCortico.png";
 import capituloMapaPatrimonio from "@/src/assets/capituloMapaPatrimonio.png";
 import capituloFotoMorro from "@/src/assets/capituloFotoMorro.png";
@@ -10,6 +13,15 @@ import {
   BannerImageCapitulo3,
   BannerImageCapitulo4,
   BannerImageCapitulo5,
+  Image1CorpoCap2,
+  Image1CorpoCap4,
+  Image1CorpoCap5,
+  Image2CorpoCap2,
+  Image2CorpoCap4,
+  Image2CorpoCap5,
+  Image3CorpoCap2,
+  Image3CorpoCap5,
+  ImageCorpoCap3,
 } from "../assets";
 
 export type ChapterBlock =
@@ -40,6 +52,12 @@ export const chapters: Chapter[] = [
       {
         type: "paragraph",
         text: "Essa migração não foi apenas um deslocamento de corpos. Foi o movimento de uma civilização inteira tentando se replantar em solo hostil.",
+      },
+      {
+        type: "image",
+        src: chapterImage1,
+        alt: "Registro visual do primeiro capítulo da narrativa",
+        caption: "Imagem representativa do ambiente descrito neste capítulo.",
       },
       {
         type: "paragraph",
@@ -94,7 +112,7 @@ export const chapters: Chapter[] = [
   },
   {
     id: "2",
-    title: "Capítulo 2",
+    title: "O Terreiro Expandido: Fé, Comida e Sociabilidade",
     banner: BannerImageCapitulo2,
     description: "O Terreiro Expandido: Fé, Comida e Sociabilidade ",
     content: [
@@ -104,7 +122,7 @@ export const chapters: Chapter[] = [
       },
       {
         type: "image",
-        src: BannerImageCapitulo2,
+        src: Image3CorpoCap2,
         alt: "Interior cultural com artefatos e objetos antigos",
         caption: "Imagens que representam a vida cotidiana no bairro.",
       },
@@ -130,7 +148,7 @@ export const chapters: Chapter[] = [
       },
       {
         type: "image",
-        src: chapterImage2,
+        src: Image1CorpoCap2,
         alt: "Ilustração de pessoas dançando e felizes",
       },
       {
@@ -139,7 +157,7 @@ export const chapters: Chapter[] = [
       },
       {
         type: "image",
-        src: chapterImage2,
+        src: Image2CorpoCap2,
         alt: "Ilustração de pessoas dançando e felizes",
       },
       {
@@ -168,8 +186,8 @@ export const chapters: Chapter[] = [
       },
       {
         type: "image",
-        src: chapterImage3,
-        alt: "Mapa da casa da Tia Ciata"
+        src: ImageCorpoCap3,
+        alt: "Mapa da casa da Tia Ciata",
       },
       {
         type: "paragraph",
@@ -225,8 +243,8 @@ export const chapters: Chapter[] = [
       },
       {
         type: "image",
-        src: chapterImage3,
-        alt: "Mapa da casa da Tia Ciata"
+        src: Image1CorpoCap4,
+        alt: "Imagem histórica representando o capítulo 4",
       },
       {
         type: "paragraph",
@@ -234,8 +252,8 @@ export const chapters: Chapter[] = [
       },
       {
         type: "image",
-        src: chapterImage3,
-        alt: "Mapa da casa da Tia Ciata"
+        src: Image2CorpoCap4,
+        alt: "Imagem histórica representando o capítulo 4",
       },
       {
         type: "paragraph",
@@ -255,7 +273,7 @@ export const chapters: Chapter[] = [
       },
     ],
   },
-   {
+  {
     id: "5",
     title: "Capítulo 5",
     banner: BannerImageCapitulo5,
@@ -279,8 +297,8 @@ export const chapters: Chapter[] = [
       },
       {
         type: "image",
-        src: chapterImage3,
-        alt: "Mapa da casa da Tia Ciata"
+        src: Image1CorpoCap5,
+        alt: "Imagem histórica representando o capítulo 5",
       },
       {
         type: "paragraph",
@@ -292,8 +310,8 @@ export const chapters: Chapter[] = [
       },
       {
         type: "image",
-        src: chapterImage3,
-        alt: "Mapa da casa da Tia Ciata"
+        src: Image2CorpoCap5,
+        alt: "Mapa da casa da Tia Ciata",
       },
       {
         type: "paragraph",
@@ -305,8 +323,8 @@ export const chapters: Chapter[] = [
       },
       {
         type: "image",
-        src: chapterImage3,
-        alt: "Mapa da casa da Tia Ciata"
+        src: Image3CorpoCap5,
+        alt: "Mapa da casa da Tia Ciata",
       },
       {
         type: "paragraph",
@@ -326,8 +344,8 @@ export const chapters: Chapter[] = [
       },
       {
         type: "image",
-        src: chapterImage3,
-        alt: "Apresentação cultural em palco",
+        src: chapterImage4,
+        alt: "Imagem numerada do capítulo 4",
         caption: "A cultura segue viva em manifestações artísticas.",
       },
       {
@@ -341,31 +359,31 @@ export const chapters: Chapter[] = [
       },
     ],
   },
-  {
-    id: "5",
-    title: "Capítulo 5",
-    banner: BannerImageCapitulo5,
-    description: "A transformação da identidade",
-    content: [
-      {
-        type: "paragraph",
-        text: "Este capítulo finaliza com a forma como as marcas daquele tempo ainda estão presentes nas festas, na linguagem e no patrimônio imaterial. O passado vive no agora.",
-      },
-      {
-        type: "image",
-        src: chapterImage3,
-        alt: "Apresentação cultural em palco",
-        caption: "A cultura segue viva em manifestações artísticas.",
-      },
-      {
-        type: "heading",
-        level: 2,
-        text: "A herança que não se perde",
-      },
-      {
-        type: "paragraph",
-        text: "As novas gerações recebiam das anteriores um acervo de sambas, versos e gestos. Essa transmissão manteve o sentimento de pertencimento e criou novos modos de se ver na cidade.",
-      },
-    ],
-  },
+  // {
+  //   id: "5",
+  //   title: "Capítulo 5",
+  //   banner: BannerImageCapitulo5,
+  //   description: "A transformação da identidade",
+  //   content: [
+  //     {
+  //       type: "paragraph",
+  //       text: "Este capítulo finaliza com a forma como as marcas daquele tempo ainda estão presentes nas festas, na linguagem e no patrimônio imaterial. O passado vive no agora.",
+  //     },
+  //     {
+  //       type: "image",
+  //       src: chapterImage5,
+  //       alt: "Imagem numerada do capítulo 5",
+  //       caption: "A cultura segue viva em manifestações artísticas.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       level: 2,
+  //       text: "A herança que não se perde",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "As novas gerações recebiam das anteriores um acervo de sambas, versos e gestos. Essa transmissão manteve o sentimento de pertencimento e criou novos modos de se ver na cidade.",
+  //     },
+  //   ],
+  // },
 ];
