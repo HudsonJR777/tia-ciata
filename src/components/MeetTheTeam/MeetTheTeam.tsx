@@ -63,7 +63,7 @@ export default function MeetTheTeam() {
         disableDotsControls={false}
         disableButtonsControls={true}
         infinite={false}
-        autoWidth={false}
+        autoWidth = {false}
         keyboardNavigation
       />
     </section>
