@@ -46,11 +46,12 @@ export default function MeetTheTeam() {
   if (!mounted) return null;
 
   return (
-    <section className="w-full lg:max-w-[1600px] mx-auto py-10 px-4 overflow-hidden container-section flex flex-col items-center gap-10">
+    <section className="w-full lg:w-[1600px] mx-auto py-10 px-4 overflow-hidden container-section flex flex-col items-center gap-10">
       <h1 className="text-3xl lg:text-5xl font-black leading-tight mb-4 text-center">
         Créditos da Equipe
       </h1>
       <AliceCarousel
+        autoPlay={true}
         mouseTracking={false}
         touchTracking={true}
         items={items}
