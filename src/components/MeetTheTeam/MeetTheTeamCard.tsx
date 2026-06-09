@@ -51,7 +51,7 @@ const socialLinks = [
 interface IMeetTheTeamCardProps {
   image: StaticImageData | string;
   name: string;
-  functition: string;
+  functition?: string;
 }
 
 export default function MeetTheTeamCard({
@@ -66,8 +66,7 @@ export default function MeetTheTeamCard({
         rounded-[40px] 
         bg-[#F3EFF2]
         shadow-lg
-        w-full
-        max-w-[310px] 
+        w-[310px] 
         h-[375px]
         flex
         flex-col

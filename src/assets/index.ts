@@ -24,6 +24,8 @@ import extras from "./extras.png";
 import aHistoria from "./aHistoria.png";
 import aVivencia from "./aVivencia.png";
 import oLegado from "./oLegado.png";
+import FilipeDurasImage from "./FilipeDurasImage.jpeg";
+import AnaCarolinaImage from "./AnaCarolinaImage.jpeg";
 
 export {
   logoHeader,
@@ -52,4 +54,6 @@ export {
   aVivencia,
   oLegado,
   LuizImagem,
+  FilipeDurasImage,
+  AnaCarolinaImage,
 };

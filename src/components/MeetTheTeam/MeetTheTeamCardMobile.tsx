@@ -4,7 +4,7 @@ import type { StaticImageData } from "next/image";
 interface IMeetTheTeamCardMobileProps {
   image: StaticImageData | string;
   name: string;
-  functition: string;
+  functition?: string;
 }
 
 export default function MeetTheTeamCardMobile({
@@ -19,8 +19,7 @@ export default function MeetTheTeamCardMobile({
         rounded-[20px] 
         bg-[#F3EFF2]
         shadow-lg
-        w-full
-        max-w-[210px] 
+        w-[260px] 
         h-[275px]
         flex
         flex-col

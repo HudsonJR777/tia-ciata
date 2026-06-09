@@ -28,7 +28,7 @@ export default function Home() {
           <div className="py-7 lg:py-4">
             <Introduction />
           </div> */}
-          <div className="py-7 lg:py-4">
+          <div className="hidden lg:block py-7 lg:py-4">
             <MeetTheTeam />
           </div>
         </div>

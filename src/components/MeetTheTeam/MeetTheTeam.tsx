@@ -33,20 +33,12 @@ export default function MeetTheTeam() {
     >
       {/* Mobile: Card menor (210px) */}
       <div className="block md:hidden">
-        <MeetTheTeamCardMobile
-          image={team.image}
-          name={team.name}
-          functition={team.function}
-        />
+        <MeetTheTeamCardMobile image={team.image} name={team.name} />
       </div>
 
       {/* Desktop: Card maior (310px) */}
-      <div className="hidden md:block">
-        <MeetTheTeamCard
-          image={team.image}
-          name={team.name}
-          functition={team.function}
-        />
+      <div className="hidden lg:block">
+        <MeetTheTeamCard image={team.image} name={team.name} />
       </div>
     </div>
   ));
@@ -54,7 +46,10 @@ export default function MeetTheTeam() {
   if (!mounted) return null;
 
   return (
-    <section className="w-full max-w-[1392px] mx-auto py-10 px-4 overflow-hidden container-section">
+    <section className="w-full lg:max-w-[1600px] mx-auto py-10 px-4 overflow-hidden container-section flex flex-col items-center gap-10">
+      <h1 className="text-3xl lg:text-5xl font-black leading-tight mb-4 text-center">
+        Créditos da Equipe
+      </h1>
       <AliceCarousel
         mouseTracking={false}
         touchTracking={true}
@@ -63,7 +58,7 @@ export default function MeetTheTeam() {
         disableDotsControls={false}
         disableButtonsControls={true}
         infinite={false}
-        autoWidth = {false}
+        autoWidth={false}
         keyboardNavigation
       />
     </section>
