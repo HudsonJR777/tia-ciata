@@ -1,32 +1,34 @@
 import HudsonImagem from "../../assets/HudsonImagem.jpeg";
 import AnaJuliaImagem from "../../assets/AnaJuliaImagem.jpeg";
 import TIagoImagem from "../../assets/TIagoImagem.png";
+import MuriloImagem from "../../assets/MuriloImagem.png";
+import LuizImagem from "../../assets/LuizImage.png";
 
 export const MeetTheTeamCardInfos = [
   {
     image: HudsonImagem,
     name: "Hudson",
-    function: "Front End",
+    function: "Desenvolvedor Full Stack",
   },
   {
     image: AnaJuliaImagem,
     name: "Ana Julia",
-    function: "Front End",
+    function: "Desenvolvedor Full Stack",
   },
   {
     image: TIagoImagem,
     name: "Tiago Secundo",
-    function: "Front End",
+    function: "Desenvolvedor Full Stack",
   },
   {
-    image: HudsonImagem,
+    image: MuriloImagem,
     name: "Murilo",
-    function: "Front End",
+    function: "Desenvolvedor Full Stack",
   },
   {
-    image: HudsonImagem,
+    image: LuizImagem,
     name: "Luiz Guilherme",
-    function: "Front End",
+    function: "Designer",
   },
   {
     image: HudsonImagem,
