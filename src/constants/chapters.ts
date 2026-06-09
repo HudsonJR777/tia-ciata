@@ -63,21 +63,23 @@ export const chapters: Chapter[] = [
         type: "image",
         src: capituloFotoMorro,
         alt: "Fotografia histórica do Morro da Providência durante o Bota-abaixo",
-        caption: "O \"Bota-abaixo\" do prefeito Pereira Passos destruiu casas e memórias inteiras na virada do século XX.",
+        caption:
+          'O "Bota-abaixo" do prefeito Pereira Passos destruiu casas e memórias inteiras na virada do século XX.',
       },
       {
         type: "paragraph",
         text: "A fotografia do \"Bota-abaixo\" — como ficaram conhecidas as demolições promovidas pelo prefeito Pereira Passos no início do século XX — registra com brutalidade o que esse projeto de modernização eurocêntrico significava na prática: casas derrubadas, famílias despejadas, memórias reduzidas a entulho. Mas o que nenhuma câmera fotografou foi o que acontecia depois da destruição. A capacidade de reunir os fragmentos, de reconstruir em outro lugar o que foi demolido, de manter viva a cosmovisão africana mesmo quando as paredes físicas desapareciam.",
       },
       {
+        type: "paragraph",
+        text: "A Pequena África foi, portanto, muito mais do que um bairro. Foi um ato de resistência geográfica. Um território onde a identidade negra se recusou a ser invisível e onde as bases culturais do Brasil que conhecemos hoje foram silenciosamente assentadas, longe dos holofotes da história oficial e sob o olhar desconfiado de um Estado que fingia não ver o que não queria reconhecer.",
+      },
+      {
         type: "image",
         src: capituloFotoCortico,
         alt: "Fotografia histórica de cortiço na Zona Portuária do Rio de Janeiro",
-        caption: "Os cortiços da Zona Portuária foram o primeiro abrigo de muitos migrantes baianos.",
-      },
-      {
-        type: "paragraph",
-        text: "A Pequena África foi, portanto, muito mais do que um bairro. Foi um ato de resistência geográfica. Um território onde a identidade negra se recusou a ser invisível e onde as bases culturais do Brasil que conhecemos hoje foram silenciosamente assentadas, longe dos holofotes da história oficial e sob o olhar desconfiado de um Estado que fingia não ver o que não queria reconhecer.",
+        caption:
+          "Os cortiços da Zona Portuária foram o primeiro abrigo de muitos migrantes baianos.",
       },
     ],
   },
