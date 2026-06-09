@@ -1,4 +1,5 @@
 import HudsonImagem from "../../assets/HudsonImagem.jpeg";
+import AnaJuliaImagem from "../../assets/AnaJuliaImagem.jpeg";
 
 export const MeetTheTeamCardInfos = [
   {
@@ -7,23 +8,23 @@ export const MeetTheTeamCardInfos = [
     function: "Front End",
   },
   {
-    image: HudsonImagem,
-    name: "Hudson",
+    image: AnaJuliaImagem,
+    name: "Ana Julia",
     function: "Front End",
   },
   {
     image: HudsonImagem,
-    name: "Hudson",
+    name: "Tiago Secundo",
     function: "Front End",
   },
   {
     image: HudsonImagem,
-    name: "Hudson",
+    name: "Murilo",
     function: "Front End",
   },
   {
     image: HudsonImagem,
-    name: "Hudson",
+    name: "Luiz Guilherme",
     function: "Front End",
   },
   {
