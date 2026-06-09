@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { ChapterBlock } from "@/src/constants/chapters";
+import BatuquePlayer from "@/src/components/BatuquePlayer";
 
 interface ChapterContentProps {
   blocks: ChapterBlock[];
@@ -82,6 +83,11 @@ export default function ChapterContent({ blocks }: ChapterContentProps) {
                   <li key={itemIndex}>{item}</li>
                 ))}
               </ul>
+            );
+
+          case "batuques":
+            return (
+              <BatuquePlayer key={index} batuques={block.batuques} />
             );
 
           default:

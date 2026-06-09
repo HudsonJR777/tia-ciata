@@ -20,12 +20,15 @@ import {
   Image3CorpoCap5,
   ImageCorpoCap3,
 } from "../assets";
+import type { Batuque } from "./batuques";
+import { chapter02Batuques } from "./batuques";
 
 export type ChapterBlock =
   | { type: "paragraph"; text: string }
   | { type: "heading"; level: 2 | 3; text: string }
   | { type: "image"; src: StaticImageData; alt: string; caption?: string }
-  | { type: "list"; ordered?: boolean; items: string[] };
+  | { type: "list"; ordered?: boolean; items: string[] }
+  | { type: "batuques"; batuques: Batuque[] };
 
 export interface Chapter {
   id: string;
@@ -150,6 +153,10 @@ export const chapters: Chapter[] = [
       {
         type: "paragraph",
         text: "Já o alujá era o toque de Xangô, orixá da justiça e do trovão, com pulsação vibrante e marcial que remetia à força dessa divindade — classificado por Fonseca como linha-guia de 12 batidas, presente nas festas do terreiro nos momentos de maior exaltação. O aguerê, toque de Oxóssi, orixá da caça e das matas, tinha levada mais leve e saltitante, evocando o movimento ágil do caçador. Quando esses quatro toques deixavam o contexto estritamente ritual e passavam a animar as rodas do quintal, carregavam consigo toda uma cosmologia — plantando na música popular brasileira raízes que muitos ouvem até hoje sem reconhecer sua origem nos terreiros. ",
+      },
+      {
+        type: "batuques",
+        batuques: chapter02Batuques,
       },
     ],
   },
