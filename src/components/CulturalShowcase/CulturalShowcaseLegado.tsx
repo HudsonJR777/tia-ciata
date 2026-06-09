@@ -1,5 +1,5 @@
 import Image from "next/image";
-import legado from "../../assets/CulturalShowcaseLegado.png";
+import legado from "../../assets/aVivencia.png";
 import Card from "../Card/Card";
 import { cardInfo } from "../Card/cardInfo";
 import CardMobile from "../Card/CardMobile";

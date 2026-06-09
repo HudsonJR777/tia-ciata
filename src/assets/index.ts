@@ -20,6 +20,9 @@ import ALivingLegacy from "./ALivingLegacy.png";
 import viesAlgoritmico from "./viesAlgoritmico.png";
 import bannerSobre from "./bannerSobre.png";
 import extras from "./extras.png";
+import aHistoria from "./aHistoria.png";
+import aVivencia from "./aVivencia.png";
+import oLegado from "./oLegado.png";
 
 export {
   logoHeader,
@@ -41,4 +44,10 @@ export {
   SistemasDeInformaçãoLogo,
   HudsonImagem,
   ALivingLegacy,
+  viesAlgoritmico,
+  bannerSobre,
+  extras,
+  aHistoria,
+  aVivencia,
+  oLegado,
 };

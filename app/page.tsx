@@ -21,12 +21,12 @@ export default function Home() {
             <CulturalShowcaseLegado />
             <CulturalShowcaseIdentity />
           </div>
-          <div className="flex flex-col gap-24.5 py-[80px] lg:py-[247px]">
+          {/* <div className="flex flex-col gap-24.5 py-[80px] lg:py-[247px]">
             <HistoricalContext />
           </div>
           <div className="py-7 lg:py-4">
             <Introduction />
-          </div>
+          </div> */}
           <div className="py-7 lg:py-4">
             <MeetTheTeam />
           </div>

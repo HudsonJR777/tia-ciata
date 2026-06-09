@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CulturalShowcaseOne from "../../assets/CulturalShowcaseOne.png";
+import CulturalShowcaseOne from "../../assets/aHistoria.png";
 import Card from "../Card/Card";
 import { cardInfo } from "../Card/cardInfo";
 import CardMobile from "../Card/CardMobile";
