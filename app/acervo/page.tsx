@@ -4,7 +4,7 @@ import galeriaAcervo1 from "@/src/assets/galeriaAcervo1.png";
 import galeriaAcervo2 from "@/src/assets/galeriaAcervo2.png";
 import galeriaAcervo3 from "@/src/assets/galeriaAcervo3.png";
 import galeriaAcervo4 from "@/src/assets/galeriaAcervo4.png";
-import acervoFonte from "@/src/assets/extras.png";       
+import acervoFonte from "@/src/assets/acervoFonte.png";       
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
