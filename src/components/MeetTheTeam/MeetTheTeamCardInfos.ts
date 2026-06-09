@@ -3,6 +3,9 @@ import AnaJuliaImagem from "../../assets/AnaJuliaImagem.jpeg";
 import TIagoImagem from "../../assets/TIagoImagem.png";
 import MuriloImagem from "../../assets/MuriloImagem.png";
 import LuizImagem from "../../assets/LuizImage.png";
+import yagoImagem from "../../assets/yagoImagem.jpeg";
+import CamilaImagem from "../../assets/CamilaImagem.jpeg";
+import PatrickImagem from "../../assets/PatrickImagem.jpeg";
 import { AnaCarolinaImage, FilipeDurasImage } from "@/src/assets";
 
 export const MeetTheTeamCardInfos = [
@@ -37,5 +40,17 @@ export const MeetTheTeamCardInfos = [
   {
     image: AnaCarolinaImage,
     name: "Ana Carolina",
+  },
+  {
+    image: yagoImagem,
+    name: "Yago Brito",
+  },
+  {
+    image: CamilaImagem,
+    name: "Camila Barbosa",
+  },
+  {
+    image: PatrickImagem,
+    name: "Ian Patrick",
   },
 ];
