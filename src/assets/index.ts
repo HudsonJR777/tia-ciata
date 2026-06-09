@@ -24,6 +24,9 @@ import extras from "./extras.png";
 import aHistoria from "./aHistoria.png";
 import aVivencia from "./aVivencia.png";
 import oLegado from "./oLegado.png";
+import capituloMapaPatrimonio from "./capituloMapaPatrimonio.png";
+import capituloFotoMorro from "./capituloFotoMorro.png";
+import capituloFotoCortico from "./capituloFotoCortico.png";
 
 export {
   logoHeader,
@@ -52,4 +55,7 @@ export {
   aVivencia,
   oLegado,
   LuizImagem,
+  capituloFotoCortico,
+  capituloMapaPatrimonio,
+  capituloFotoMorro,
 };
