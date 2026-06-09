@@ -1,6 +1,4 @@
 import { StaticImageData } from "next/image";
-import bannerChapter2 from "@/src/assets/bannerSobre.png";
-import bannerChapter3 from "@/src/assets/aHistoria.png";
 import chapterImage2 from "@/src/assets/galeriaAcervo2.png";
 import chapterImage3 from "@/src/assets/CulturalShowcaseOne.png";
 import capituloFotoCortico from "@/src/assets/capituloFotoCortico.png";
@@ -76,6 +74,10 @@ export const chapters: Chapter[] = [
       {
         type: "paragraph",
         text: 'A fotografia do "Bota-abaixo" — como ficaram conhecidas as demolições promovidas pelo prefeito Pereira Passos no início do século XX — registra com brutalidade o que esse projeto de modernização eurocêntrico significava na prática: casas derrubadas, famílias despejadas, memórias reduzidas a entulho. Mas o que nenhuma câmera fotografou foi o que acontecia depois da destruição. A capacidade de reunir os fragmentos, de reconstruir em outro lugar o que foi demolido, de manter viva a cosmovisão africana mesmo quando as paredes físicas desapareciam.',
+      },
+      {
+        type: "paragraph",
+        text: "A Pequena África foi, portanto, muito mais do que um bairro. Foi um ato de resistência geográfica. Um território onde a identidade negra se recusou a ser invisível e onde as bases culturais do Brasil que conhecemos hoje foram silenciosamente assentadas, longe dos holofotes da história oficial e sob o olhar desconfiado de um Estado que fingia não ver o que não queria reconhecer.",
       },
       {
         type: "image",
