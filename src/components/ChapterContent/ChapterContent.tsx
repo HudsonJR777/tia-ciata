@@ -42,21 +42,26 @@ export default function ChapterContent({ blocks }: ChapterContentProps) {
             );
 
           case "image":
-            return (
-              <div key={index} className="w-full rounded-3xl overflow-hidden">
-                <Image
-                  src={block.src}
-                  alt={block.alt}
-                  width={block.src.width}
-                  height={block.src.height}
-                  className="w-full h-auto object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-                />
-                {block.caption ? (
-                  <p className="mt-4 text-sm text-white/60">{block.caption}</p>
-                ) : null}
-              </div>
-            );
+          return (
+            <div
+              key={index}
+              className="mx-auto my-8 max-w-2xl overflow-hidden rounded-3xl"
+            >
+              <Image
+                src={block.src}
+                alt={block.alt}
+                width={block.src.width}
+                height={block.src.height}
+                className="h-auto w-full object-cover rounded-3xl"
+              />
+
+              {block.caption && (
+                <p className="mt-3 text-center text-sm text-white/60 italic">
+                  {block.caption}
+                </p>
+              )}
+            </div>
+          );
 
           case "list":
             return block.ordered ? (
