@@ -1,5 +1,4 @@
 import { StaticImageData } from "next/image";
-import bannerChapter1 from "@/src/assets/bannerAcervo.png";
 import bannerChapter2 from "@/src/assets/bannerSobre.png";
 import bannerChapter3 from "@/src/assets/aHistoria.png";
 import chapterImage2 from "@/src/assets/galeriaAcervo2.png";
@@ -7,6 +6,13 @@ import chapterImage3 from "@/src/assets/CulturalShowcaseOne.png";
 import capituloFotoCortico from "@/src/assets/capituloFotoCortico.png";
 import capituloMapaPatrimonio from "@/src/assets/capituloMapaPatrimonio.png";
 import capituloFotoMorro from "@/src/assets/capituloFotoMorro.png";
+import {
+  BannerCapitulo1,
+  BannerImageCapitulo2,
+  BannerImageCapitulo3,
+  BannerImageCapitulo4,
+  BannerImageCapitulo5,
+} from "../assets";
 
 export type ChapterBlock =
   | { type: "paragraph"; text: string }
@@ -25,8 +31,8 @@ export interface Chapter {
 export const chapters: Chapter[] = [
   {
     id: "1",
-    title: "Capítulo 1",
-    banner: bannerChapter1,
+    title: "A Diáspora Baiana e a Fundação da Pequena África",
+    banner: BannerCapitulo1,
     description: "A Diáspora Baiana e a Fundação da Pequena África",
     content: [
       {
@@ -45,11 +51,12 @@ export const chapters: Chapter[] = [
         type: "image",
         src: capituloMapaPatrimonio,
         alt: "Mapa do Patrimônio da Pequena África no Rio de Janeiro",
-        caption: "Os pontos de memória da Pequena África na Zona Portuária do Rio de Janeiro.",
+        caption:
+          "Os pontos de memória da Pequena África na Zona Portuária do Rio de Janeiro.",
       },
       {
         type: "paragraph",
-        text: "Nesse espaço, as ruas estreitas e os cortiços apertados guardavam algo que nenhuma reforma urbana conseguiu destruir completamente: a capacidade de um povo de reconstituir seus laços. As chamadas \"tias baianas\" — mulheres negras, em geral iyálorixás ou ligadas às tradições de candomblé — foram as grandes arquitetas dessa reconstrução. Com seus tabuleiros de quitutes nas ruas e suas casas abertas para quem chegava, elas transformaram a precariedade imposta em um projeto coletivo de sobrevivência e identidade.",
+        text: 'Nesse espaço, as ruas estreitas e os cortiços apertados guardavam algo que nenhuma reforma urbana conseguiu destruir completamente: a capacidade de um povo de reconstituir seus laços. As chamadas "tias baianas" — mulheres negras, em geral iyálorixás ou ligadas às tradições de candomblé — foram as grandes arquitetas dessa reconstrução. Com seus tabuleiros de quitutes nas ruas e suas casas abertas para quem chegava, elas transformaram a precariedade imposta em um projeto coletivo de sobrevivência e identidade.',
       },
       {
         type: "paragraph",
@@ -63,17 +70,19 @@ export const chapters: Chapter[] = [
         type: "image",
         src: capituloFotoMorro,
         alt: "Fotografia histórica do Morro da Providência durante o Bota-abaixo",
-        caption: "O \"Bota-abaixo\" do prefeito Pereira Passos destruiu casas e memórias inteiras na virada do século XX.",
+        caption:
+          'O "Bota-abaixo" do prefeito Pereira Passos destruiu casas e memórias inteiras na virada do século XX.',
       },
       {
         type: "paragraph",
-        text: "A fotografia do \"Bota-abaixo\" — como ficaram conhecidas as demolições promovidas pelo prefeito Pereira Passos no início do século XX — registra com brutalidade o que esse projeto de modernização eurocêntrico significava na prática: casas derrubadas, famílias despejadas, memórias reduzidas a entulho. Mas o que nenhuma câmera fotografou foi o que acontecia depois da destruição. A capacidade de reunir os fragmentos, de reconstruir em outro lugar o que foi demolido, de manter viva a cosmovisão africana mesmo quando as paredes físicas desapareciam.",
+        text: 'A fotografia do "Bota-abaixo" — como ficaram conhecidas as demolições promovidas pelo prefeito Pereira Passos no início do século XX — registra com brutalidade o que esse projeto de modernização eurocêntrico significava na prática: casas derrubadas, famílias despejadas, memórias reduzidas a entulho. Mas o que nenhuma câmera fotografou foi o que acontecia depois da destruição. A capacidade de reunir os fragmentos, de reconstruir em outro lugar o que foi demolido, de manter viva a cosmovisão africana mesmo quando as paredes físicas desapareciam.',
       },
       {
         type: "image",
         src: capituloFotoCortico,
         alt: "Fotografia histórica de cortiço na Zona Portuária do Rio de Janeiro",
-        caption: "Os cortiços da Zona Portuária foram o primeiro abrigo de muitos migrantes baianos.",
+        caption:
+          "Os cortiços da Zona Portuária foram o primeiro abrigo de muitos migrantes baianos.",
       },
       {
         type: "paragraph",
@@ -84,7 +93,7 @@ export const chapters: Chapter[] = [
   {
     id: "2",
     title: "Capítulo 2",
-    banner: bannerChapter2,
+    banner: BannerImageCapitulo2,
     description: "Entre vozes e contrapontos da cidade",
     content: [
       {
@@ -119,8 +128,62 @@ export const chapters: Chapter[] = [
   {
     id: "3",
     title: "Capítulo 3",
-    banner: bannerChapter3,
+    banner: BannerImageCapitulo3,
     description: "O legado que se manteve vivo",
+    content: [
+      {
+        type: "paragraph",
+        text: "Este capítulo finaliza com a forma como as marcas daquele tempo ainda estão presentes nas festas, na linguagem e no patrimônio imaterial. O passado vive no agora.",
+      },
+      {
+        type: "image",
+        src: chapterImage3,
+        alt: "Apresentação cultural em palco",
+        caption: "A cultura segue viva em manifestações artísticas.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "A herança que não se perde",
+      },
+      {
+        type: "paragraph",
+        text: "As novas gerações recebiam das anteriores um acervo de sambas, versos e gestos. Essa transmissão manteve o sentimento de pertencimento e criou novos modos de se ver na cidade.",
+      },
+    ],
+  },
+  {
+    id: "4",
+    title: "Capítulo 4",
+    banner: BannerImageCapitulo4,
+    description: "A transformação da identidade",
+    content: [
+      {
+        type: "paragraph",
+        text: "Este capítulo finaliza com a forma como as marcas daquele tempo ainda estão presentes nas festas, na linguagem e no patrimônio imaterial. O passado vive no agora.",
+      },
+      {
+        type: "image",
+        src: chapterImage3,
+        alt: "Apresentação cultural em palco",
+        caption: "A cultura segue viva em manifestações artísticas.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "A herança que não se perde",
+      },
+      {
+        type: "paragraph",
+        text: "As novas gerações recebiam das anteriores um acervo de sambas, versos e gestos. Essa transmissão manteve o sentimento de pertencimento e criou novos modos de se ver na cidade.",
+      },
+    ],
+  },
+  {
+    id: "5",
+    title: "Capítulo 5",
+    banner: BannerImageCapitulo5,
+    description: "A transformação da identidade",
     content: [
       {
         type: "paragraph",

@@ -29,6 +29,11 @@ import AnaCarolinaImage from "./AnaCarolinaImage.jpeg";
 import capituloMapaPatrimonio from "./capituloMapaPatrimonio.png";
 import capituloFotoMorro from "./capituloFotoMorro.png";
 import capituloFotoCortico from "./capituloFotoCortico.png";
+import BannerCapitulo1 from "./BannerCapitulo1.png";
+import BannerImageCapitulo2 from "./BannerImageCapitulo2.png";
+import BannerImageCapitulo3 from "./BannerImageCapitulo3.png";
+import BannerImageCapitulo4 from "./BannerImageCapitulo4.png";
+import BannerImageCapitulo5 from "./BannerImageCapitulo5.png";
 
 export {
   logoHeader,
@@ -62,4 +67,9 @@ export {
   capituloFotoCortico,
   capituloMapaPatrimonio,
   capituloFotoMorro,
+  BannerCapitulo1,
+  BannerImageCapitulo2,
+  BannerImageCapitulo3,
+  BannerImageCapitulo4,
+  BannerImageCapitulo5,
 };
