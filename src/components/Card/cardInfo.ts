@@ -1,4 +1,4 @@
-import { carcardImage7 } from "@/src/assets";
+import { cardImage7 } from "@/src/assets";
 import cardImage1 from "../../assets/cardImage1.png";
 import cardImage2 from "../../assets/cardImage2.png";
 import cardImage3 from "../../assets/cardImage3.png";
@@ -91,7 +91,7 @@ export const cardInfo = {
 
   Identity: [
     {
-      image: carcardImage7,
+      image: cardImage7,
       title: "Legado e Identidade",
       badges: [
         {

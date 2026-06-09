@@ -1,5 +1,5 @@
 ﻿import Image from "next/image";
-import { logoHeader, SistemasDeInformaçãoLogo } from "@/src/assets";
+import { logoHeader, SistemasDeInformacaoLogo } from "@/src/assets";
 
 export default function Footer() {
   return (
@@ -37,7 +37,7 @@ export default function Footer() {
             <div className="flex flex-wrap items-center justify-center gap-4 rounded-[28px] border border-white/10 bg-white/5 px-4 py-3 shadow-[0_6px_20px_rgba(0,0,0,0.22)] sm:gap-6 sm:px-6 mt-4">
               <div className="max-w-[130px] sm:max-w-[150px]">
                 <Image
-                  src={SistemasDeInformaçãoLogo}
+                  src={SistemasDeInformacaoLogo}
                   alt="Sistemas de Informação"
                   className="w-full object-contain"
                 />
