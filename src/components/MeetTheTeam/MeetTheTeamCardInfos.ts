@@ -11,7 +11,7 @@ import PavilaImagem from "../../assets/PavilaImagem.jpeg";
 import MariaImagem from "../../assets/MariaImagem.jpeg";
 import MiguelImagem from "../../assets/MiguelImagem.jpeg";
 import MillerImagem from "../../assets/MillerImagem.jpeg";
-
+import LuizOtavioImagem from "../../assets/LuizOtavioImagem.jpeg";
 import { AnaCarolinaImage, FilipeDurasImage } from "@/src/assets";
 
 export const MeetTheTeamCardInfos = [
@@ -74,5 +74,9 @@ export const MeetTheTeamCardInfos = [
     {
     image: MiguelImagem,
     name: "Miguel",
+  },
+  {
+    image: LuizOtavioImagem,
+    name: "Luiz Otávio",
   },
 ];
