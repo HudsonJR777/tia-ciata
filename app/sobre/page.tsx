@@ -4,6 +4,8 @@ import Image from "next/image";
 import sobreTitle from "@/src/assets/sobre.png";
 import bannerSobre from "@/src/assets/bannerHomemMulher.png";
 import MeetTheTeam from "@/src/components/MeetTheTeam/MeetTheTeam";
+import computadorSobreNos from "@/src/assets/computadorSobreNos.png";
+
 
 const features = [
   {
@@ -107,11 +109,12 @@ export default function Sobre() {
           <div className="relative w-full max-w-4xl mx-auto mb-16 rounded-2xl overflow-hidden border border-white/10 shadow-[0_24px_60px_rgba(0,0,0,0.6)] bg-[#111]">
             <div className="aspect-video flex items-center justify-center bg-gradient-to-br from-[#1a0a00] to-[#0a0a1a]">
               <div className="text-center text-white/20">
-                <svg className="w-16 h-16 mx-auto mb-3" fill="none" stroke="currentColor" strokeWidth="1" viewBox="0 0 24 24">
-                  <rect x="2" y="3" width="20" height="14" rx="2" />
-                  <path d="M8 21h8M12 17v4" />
-                </svg>
-                <p className="text-xs uppercase tracking-widest">Screenshot do projeto</p>
+              <Image
+              src={computadorSobreNos}
+              alt="Computador mostrando o site"
+              className="w-[2500px] lg:w-[3500px] object-contain"
+              priority
+            />
               </div>
             </div>
           </div>
