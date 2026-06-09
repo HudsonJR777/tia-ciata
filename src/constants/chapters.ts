@@ -98,10 +98,6 @@ export const chapters: Chapter[] = [
         caption:
           "Os cortiços da Zona Portuária foram o primeiro abrigo de muitos migrantes baianos.",
       },
-      {
-        type: "paragraph",
-        text: "A Pequena África foi, portanto, muito mais do que um bairro. Foi um ato de resistência geográfica. Um território onde a identidade negra se recusou a ser invisível e onde as bases culturais do Brasil que conhecemos hoje foram silenciosamente assentadas, longe dos holofotes da história oficial e sob o olhar desconfiado de um Estado que fingia não ver o que não queria reconhecer.",
-      },
     ],
   },
   {
