@@ -18,7 +18,7 @@ export const navItems = [
   },
   {
     title: "Créditos",
-    href: ROUTES.CREDITOS,
+    href: "#",
   },
   {
     title: "Acervo",
