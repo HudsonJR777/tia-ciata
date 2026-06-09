@@ -2,7 +2,8 @@
 
 import HeaderDesktop from "@/src/components/Header/HeaderDesktop";
 import HeaderMobile from "@/src/components/Header/HeaderMobile";
-import BannerHero from "@/src/components/BannerHero/BannerHero";
+import { CommonBanner } from "@/src/components/Common";
+import bannerHero from "@/src/assets/bannerHero.png";
 import CulturalShowcaseLegado from "@/src/components/CulturalShowcase/CulturalShowcaseLegado";
 import CulturalShowcaseHistoria from "@/src/components/CulturalShowcase/CulturalShowcaseHistoria";
 import CulturalShowcaseIdentity from "@/src/components/CulturalShowcase/CulturalShowcaseIdentity";
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <div className="dark:bg-black">
       <main>
-        <BannerHero />
+        <CommonBanner src={bannerHero} alt="Banner Matriarca do Samba" />
         <div className="py-7 lg:py-40 flex flex-col items-center justify-center">
           <div className="flex flex-col gap-24.5">
             <CulturalShowcaseHistoria />

@@ -28,3 +28,65 @@ body {
     @apply px-[89px];
   }
 }
+
+/* Estilos para Capítulos */
+.chapter-title {
+  @apply text-[23px] font-bold text-[#FEC40F];
+  font-family: "Inter", sans-serif;
+  line-height: 36px;
+  letter-spacing: -0.48px;
+  vertical-align: middle;
+}
+
+.chapter-description {
+  @apply text-base lg:text-lg text-white/80 leading-relaxed;
+  font-family: "Inter", sans-serif;
+}
+
+.chapter-content {
+  @apply text-white/70 leading-8;
+  font-family: "Inter", sans-serif;
+}
+
+.chapter-content p {
+  @apply mb-6 lg:mb-8;
+}
+
+.chapter-content h2 {
+  @apply text-xl lg:text-2xl font-bold text-white mt-8 mb-4;
+}
+
+.chapter-content h3 {
+  @apply text-lg lg:text-xl font-semibold text-white/90 mt-6 mb-3;
+}
+
+.chapter-content ul,
+.chapter-content ol {
+  @apply ml-4 lg:ml-6 mb-6 space-y-2;
+}
+
+.chapter-content li {
+  @apply text-white/70;
+}
+
+.chapter-content img,
+.chapter-content picture {
+  @apply w-full h-auto rounded-3xl overflow-hidden;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  .chapter-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .chapter-description {
+    font-size: 14px;
+  }
+
+  .chapter-content {
+    font-size: 14px;
+  }
+}
+
