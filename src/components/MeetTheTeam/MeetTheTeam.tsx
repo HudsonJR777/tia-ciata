@@ -12,11 +12,11 @@ const AliceCarousel = dynamic(() => import("react-alice-carousel"), {
 });
 
 const responsive = {
-  0: { items: 1 }, // Mobile: 1 card por vez
-  640: { items: 1 }, // Mobile grande: 1 card por vez
-  768: { items: 2 }, // Tablet: 2 cards
-  1024: { items: 3 }, // Telas médias: 3 cards
-  1280: { items: 4 }, // Desktop: 4 cards
+  0: { items: 1 },
+  640: { items: 1 },
+  768: { items: 2 },
+  1024: { items: 3 },
+  1280: { items: 4 },
 };
 
 export default function MeetTheTeam() {
@@ -29,7 +29,7 @@ export default function MeetTheTeam() {
   const items = MeetTheTeamCardInfos.map((team, index) => (
     <div
       key={`${team.name}-${index}`}
-      className="px-2 flex justify-center items-center"
+      className="w-full flex justify-center items-center px-2"
     >
       {/* Mobile: Card menor (210px) */}
       <div className="block md:hidden">
@@ -63,7 +63,7 @@ export default function MeetTheTeam() {
         disableDotsControls={false}
         disableButtonsControls={true}
         infinite={false}
-        autoWidth={true}
+        autoWidth={false}
         keyboardNavigation
       />
     </section>
