@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const chapters = [
-  { title: "Capítulo 1", href: "#capitulo-1" },
-  { title: "Capítulo 2", href: "#capitulo-2" },
-  { title: "Capítulo 3", href: "#capitulo-3" },
-  { title: "Capítulo 4", href: "#capitulo-4" },
+  { title: "Capítulo 1", href: "/capitulos/1" },
+  { title: "Capítulo 2", href: "/capitulos/2" },
+  { title: "Capítulo 3", href: "/capitulos/3" },
+  { title: "Capítulo 4", href: "/capitulos/4" },
+  { title: "Capítulo 5", href: "/capitulos/5" },
 ];
 
 interface ChapterAccordionProps {
@@ -19,16 +21,19 @@ export default function ChapterAccordion({
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={`${mobile ? "w-full" : "relative inline-block"}`}>
+    <div className={mobile ? "w-full" : "relative inline-block"}>
       <button
         type="button"
         onClick={() => setOpen(!open)}
         className={`flex w-full items-center justify-between gap-2 text-left text-sm font-medium uppercase tracking-[0.08em] text-white/80 transition ${
-          mobile ? "px-0 py-0" : "bg-transparent px-3 py-3  hover:text-white"
+          mobile
+            ? "px-0 py-0"
+            : "bg-transparent px-3 py-3 hover:text-white"
         }`}
         aria-expanded={open}
       >
         Capítulos
+
         <span
           className={`inline-block transition-transform duration-200 ${
             open ? "rotate-180" : ""
@@ -49,13 +54,13 @@ export default function ChapterAccordion({
           <ul className="flex flex-col gap-1 p-2">
             {chapters.map((chapter, index) => (
               <li key={index}>
-                <a
+                <Link
                   href={chapter.href}
                   className="block rounded-lg px-3 py-2 text-sm text-[#F2C230] transition hover:bg-white/10 hover:text-white"
                   onClick={() => setOpen(false)}
                 >
                   {chapter.title}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
