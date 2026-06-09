@@ -6,7 +6,7 @@ import cardImage3 from "./cardImage3.png";
 import cardImage4 from "./cardImage4.png";
 import cardImage5 from "./cardImage5.png";
 import cardImage6 from "./cardImage6.png";
-import carcardImage7 from "./cardImage7.png";
+import cardImage7 from "./cardImage7.png";
 import cardIcone from "./cardIcone.svg";
 import CulturalShowcaseOne from "./CulturalShowcaseOne.png";
 import legado from "./CulturalShowcaseLegado.png";
@@ -34,10 +34,10 @@ export {
   cardImage4,
   cardImage5,
   cardImage6,
+  cardImage7,
   cardIcone,
   CulturalShowcaseOne,
   legado,
-  carcardImage7,
   CulturalShowcaseIdentity,
   HistoricalContextImage,
   mulherNegraColagem,
