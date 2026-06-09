@@ -51,12 +51,6 @@ export const chapters: Chapter[] = [
         text: "Essa migração não foi apenas um deslocamento de corpos. Foi o movimento de uma civilização inteira tentando se replantar em solo hostil.",
       },
       {
-        type: "image",
-        src: chapterImage1,
-        alt: "Registro visual do primeiro capítulo da narrativa",
-        caption: "Imagem representativa do ambiente descrito neste capítulo.",
-      },
-      {
         type: "paragraph",
         text: "A Praça Onze e os arredores da Zona Portuária da capital federal se tornaram o ponto de chegada natural para esses migrantes. Ali, onde o cheiro do mar se misturava com o barulho dos trapiches e o vai e vem das cargas, formou-se aquilo que o músico e compositor Heitor dos Prazeres mais tarde chamaria de Pequena África. Não era um nome oficial em mapa nenhum, mas era o nome verdadeiro de um território que pulsava com a memória de quem havia sobrevivido ao maior crime coletivo da história moderna.",
       },
@@ -101,10 +95,6 @@ export const chapters: Chapter[] = [
         caption:
           "Os cortiços da Zona Portuária foram o primeiro abrigo de muitos migrantes baianos.",
       },
-      {
-        type: "paragraph",
-        text: "A Pequena África foi, portanto, muito mais do que um bairro. Foi um ato de resistência geográfica. Um território onde a identidade negra se recusou a ser invisível e onde as bases culturais do Brasil que conhecemos hoje foram silenciosamente assentadas, longe dos holofotes da história oficial e sob o olhar desconfiado de um Estado que fingia não ver o que não queria reconhecer.",
-      },
     ],
   },
   {
@@ -119,7 +109,7 @@ export const chapters: Chapter[] = [
       },
       {
         type: "image",
-        src: Image3CorpoCap2,
+        src: Image1CorpoCap2,
         alt: "Interior cultural com artefatos e objetos antigos",
         caption: "Imagens que representam a vida cotidiana no bairro.",
       },
@@ -145,7 +135,7 @@ export const chapters: Chapter[] = [
       },
       {
         type: "image",
-        src: Image1CorpoCap2,
+        src: Image2CorpoCap2,
         alt: "Ilustração de pessoas dançando e felizes",
       },
       {
@@ -154,7 +144,7 @@ export const chapters: Chapter[] = [
       },
       {
         type: "image",
-        src: Image2CorpoCap2,
+        src: Image3CorpoCap2,
         alt: "Ilustração de pessoas dançando e felizes",
       },
       {
