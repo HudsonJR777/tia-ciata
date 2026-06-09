@@ -34,6 +34,15 @@ import BannerImageCapitulo2 from "./BannerImageCapitulo2.png";
 import BannerImageCapitulo3 from "./BannerImageCapitulo3.png";
 import BannerImageCapitulo4 from "./BannerImageCapitulo4.png";
 import BannerImageCapitulo5 from "./BannerImageCapitulo5.png";
+import ImageCorpoCap3 from "./ImageCorpoCap3.png";
+import Image1CorpoCap4 from "./Image1CorpoCap4.png";
+import Image2CorpoCap4 from "./Image2CorpoCap4.png";
+import Image1CorpoCap5 from "./Image1CorpoCap5.png";
+import Image2CorpoCap5 from "./Image2CorpoCap5.png";
+import Image3CorpoCap5 from "./Image3CorpoCap5.png";
+import Image1CorpoCap2 from "./Image1CorpoCap2.png";
+import Image2CorpoCap2 from "./Image2CorpoCap2.png";
+import Image3CorpoCap2 from "./Image3CorpoCap2.png";
 
 export {
   logoHeader,
@@ -72,4 +81,13 @@ export {
   BannerImageCapitulo3,
   BannerImageCapitulo4,
   BannerImageCapitulo5,
+  ImageCorpoCap3,
+  Image1CorpoCap4,
+  Image2CorpoCap4,
+  Image1CorpoCap5,
+  Image2CorpoCap5,
+  Image3CorpoCap5,
+  Image1CorpoCap2,
+  Image2CorpoCap2,
+  Image3CorpoCap2,
 };

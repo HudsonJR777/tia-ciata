@@ -58,7 +58,7 @@ export default function MeetTheTeam() {
         responsive={responsive}
         disableDotsControls={false}
         disableButtonsControls={true}
-        infinite={false}
+        infinite={true}
         autoWidth={false}
         keyboardNavigation
       />
