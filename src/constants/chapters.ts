@@ -1,9 +1,6 @@
 import { StaticImageData } from "next/image";
 import chapterImage1 from "@/src/assets/galeriaAcervo1.png";
-import chapterImage2 from "@/src/assets/galeriaAcervo2.png";
-import chapterImage3 from "@/src/assets/galeriaAcervo3.png";
 import chapterImage4 from "@/src/assets/galeriaAcervo4.png";
-import chapterImage5 from "@/src/assets/galeriaAcervo5.jpg";
 import capituloFotoCortico from "@/src/assets/capituloFotoCortico.png";
 import capituloMapaPatrimonio from "@/src/assets/capituloMapaPatrimonio.png";
 import capituloFotoMorro from "@/src/assets/capituloFotoMorro.png";
@@ -168,7 +165,7 @@ export const chapters: Chapter[] = [
   },
   {
     id: "3",
-    title: "Capítulo 3",
+    title: "Entre o Salão e o Quintal: A Diplomacia do Samba",
     banner: BannerImageCapitulo3,
     description: "Entre o Salão e o Quintal: A Diplomacia do Samba",
     content: [
@@ -213,7 +210,7 @@ export const chapters: Chapter[] = [
   },
   {
     id: "4",
-    title: "Capítulo 4",
+    title: "Negociadora Astuta: Além do Estereótipo da 'Heroína Calada'",
     banner: BannerImageCapitulo4,
     description: "Negociadora Astuta: Além do Estereótipo da 'Heroína Calada'",
     content: [
@@ -275,7 +272,7 @@ export const chapters: Chapter[] = [
   },
   {
     id: "5",
-    title: "Capítulo 5",
+    title: "Samba como Ato Político e Desconstrução do Mito Racial",
     banner: BannerImageCapitulo5,
     description: "Samba como Ato Político e Desconstrução do Mito Racial",
     content: [
