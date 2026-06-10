@@ -1,5 +1,4 @@
-"use client";
-
+import type { Metadata } from "next";
 import Image from "next/image";
 import bannerAcervo from "@/src/assets/bannerAcervo.png";
 import galeriaAcervo1 from "@/src/assets/galeriaAcervo1.png";
@@ -8,6 +7,26 @@ import galeriaAcervo3 from "@/src/assets/galeriaAcervo3.png";
 import galeriaAcervo4 from "@/src/assets/galeriaAcervo4.png";
 import galeriaAcervo5 from "@/src/assets/galeriaAcervo5.jpg";
 import acervoFonte from "@/src/assets/acervoFonte.png";
+import { siteName, siteDescription, siteUrl } from "@/src/constants/seo";
+
+export const metadata: Metadata = {
+  title: `${siteName} — Acervo`,
+  description: siteDescription,
+  openGraph: {
+    title: `${siteName} — Acervo`,
+    description: siteDescription,
+    url: `${siteUrl}/acervo`,
+    siteName,
+    type: "website",
+  },
+  alternates: {
+    canonical: `${siteUrl}/acervo`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
@@ -37,6 +56,7 @@ export default function AcervoPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/80 via-transparent to-transparent" />
 
           <div className="container-section relative z-10 pb-10 pt-20 lg:pb-16 lg:pt-28">
+            <h1 className="sr-only">Acervo digital de Tia Ciata</h1>
             <Image
               src={acervoFonte}
               alt="Acervo"
@@ -54,7 +74,6 @@ export default function AcervoPage() {
         <section className="container-section py-12 lg:py-16">
           <SectionTitle>Galeria do Acervo</SectionTitle>
           <div className="flex flex-col gap-2">
-
             <div className="grid grid-cols-[3fr_2fr] gap-2 h-[600px]">
               <div className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
@@ -108,7 +127,6 @@ export default function AcervoPage() {
                 </div>
               </div>
             </div>
-
           </div>
         </section>
 

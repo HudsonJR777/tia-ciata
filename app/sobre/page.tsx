@@ -1,16 +1,40 @@
-"use client";
-
+import type { Metadata } from "next";
 import Image from "next/image";
 import sobreTitle from "@/src/assets/sobre.png";
 import bannerSobre from "@/src/assets/bannerHomemMulher.png";
 import MeetTheTeam from "@/src/components/MeetTheTeam/MeetTheTeam";
 import computadorSobreNos from "@/src/assets/computadorSobreNos.png";
+import { siteName, siteDescription, siteUrl } from "@/src/constants/seo";
 
+export const metadata: Metadata = {
+  title: `${siteName} — Sobre`,
+  description: siteDescription,
+  openGraph: {
+    title: `${siteName} — Sobre`,
+    description: siteDescription,
+    url: `${siteUrl}/sobre`,
+    siteName,
+    type: "website",
+  },
+  alternates: {
+    canonical: `${siteUrl}/sobre`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 const features = [
   {
     icon: (
-      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+      <svg
+        className="w-8 h-8 text-white"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+      >
         <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3m10 0h3a2 2 0 0 0 2-2v-3" />
         <path d="M9 9l6 6M15 9l-6 6" />
       </svg>
@@ -21,7 +45,13 @@ const features = [
   },
   {
     icon: (
-      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+      <svg
+        className="w-8 h-8 text-white"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+      >
         <rect x="3" y="3" width="18" height="18" rx="2" />
         <path d="M3 9h18M9 21V9" />
       </svg>
@@ -32,7 +62,13 @@ const features = [
   },
   {
     icon: (
-      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+      <svg
+        className="w-8 h-8 text-white"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+      >
         <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" />
         <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
       </svg>
@@ -43,7 +79,13 @@ const features = [
   },
   {
     icon: (
-      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+      <svg
+        className="w-8 h-8 text-white"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+      >
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
       </svg>
     ),
@@ -70,6 +112,9 @@ export default function Sobre() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/80 via-transparent to-transparent" />
 
           <div className="container-section relative z-10 pb-10 pt-20 lg:pb-16 lg:pt-28">
+            <h1 className="sr-only">
+              Sobre o projeto Tia Ciata e seu papel na cultura afro-brasileira
+            </h1>
             <Image
               src={sobreTitle}
               alt="Sobre"
@@ -100,8 +145,9 @@ export default function Sobre() {
               Compartilhando Histórias
             </h3>
             <p className="text-white/60 text-sm lg:text-base max-w-2xl mx-auto leading-relaxed">
-              Uma plataforma digital desenvolvida por estudantes da UFVJM
-              para valorizar o legado de Tia Ciata e ampliar o acesso à cultura afro-brasileira.
+              Uma plataforma digital desenvolvida por estudantes da UFVJM para
+              valorizar o legado de Tia Ciata e ampliar o acesso à cultura
+              afro-brasileira.
             </p>
           </div>
 
@@ -109,12 +155,12 @@ export default function Sobre() {
           <div className="relative w-full max-w-4xl mx-auto mb-16 rounded-2xl overflow-hidden border border-white/10 shadow-[0_24px_60px_rgba(0,0,0,0.6)] bg-[#111]">
             <div className="aspect-video flex items-center justify-center bg-gradient-to-br from-[#1a0a00] to-[#0a0a1a]">
               <div className="text-center text-white/20">
-              <Image
-              src={computadorSobreNos}
-              alt="Computador mostrando o site"
-              className="w-[2500px] lg:w-[3500px] object-contain"
-              priority
-            />
+                <Image
+                  src={computadorSobreNos}
+                  alt="Computador mostrando o site"
+                  className="w-[2500px] lg:w-[3500px] object-contain"
+                  priority
+                />
               </div>
             </div>
           </div>

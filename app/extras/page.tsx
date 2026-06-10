@@ -1,9 +1,28 @@
-"use client";
-
+import type { Metadata } from "next";
 import Image from "next/image";
 import viesAlgoritmico from "@/src/assets/viesAlgoritmico.png";
 import bannerSobre from "@/src/assets/bannerSobre.png";
 import extrasTitle from "@/src/assets/extras.png";
+import { siteName, siteDescription, siteUrl } from "@/src/constants/seo";
+
+export const metadata: Metadata = {
+  title: `${siteName} — Extras`,
+  description: siteDescription,
+  openGraph: {
+    title: `${siteName} — Extras`,
+    description: siteDescription,
+    url: `${siteUrl}/extras`,
+    siteName,
+    type: "website",
+  },
+  alternates: {
+    canonical: `${siteUrl}/extras`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function Extras() {
   return (
@@ -25,6 +44,7 @@ export default function Extras() {
 
           {/* Título como imagem + subtítulo */}
           <div className="container-section relative z-10 pb-10 pt-20 lg:pb-16 lg:pt-28">
+            <h1 className="sr-only">Extras do projeto Tia Ciata</h1>
             <Image
               src={extrasTitle}
               alt="Extras"

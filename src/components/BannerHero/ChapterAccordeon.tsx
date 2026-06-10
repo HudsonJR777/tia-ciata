@@ -25,15 +25,12 @@ export default function ChapterAccordion({
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className={`flex w-full items-center justify-between gap-2 text-left text-sm font-medium uppercase tracking-[0.08em] text-white/80 transition ${
-          mobile
-            ? "px-0 py-0"
-            : "bg-transparent px-3 py-3 hover:text-white"
+        className={`flex w-full items-center justify-between gap-2 text-left text-sm lg:text-[18px] font-medium uppercase tracking-[0.08em] text-white/80 transition ${
+          mobile ? "px-0 py-0" : "bg-transparent px-3 py-3 hover:text-white"
         }`}
         aria-expanded={open}
       >
         Capítulos
-
         <span
           className={`inline-block transition-transform duration-200 ${
             open ? "rotate-180" : ""
@@ -56,7 +53,7 @@ export default function ChapterAccordion({
               <li key={index}>
                 <Link
                   href={chapter.href}
-                  className="block rounded-lg px-3 py-2 text-sm text-[#F2C230] transition hover:bg-white/10 hover:text-white"
+                  className="block rounded-lg px-3 py-2 text-sm lg:text-[16px] text-[#F2C230] transition hover:bg-white/10 hover:text-white"
                   onClick={() => setOpen(false)}
                 >
                   {chapter.title}

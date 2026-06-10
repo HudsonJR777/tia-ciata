@@ -1,6 +1,27 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { chapters } from "@/src/constants/chapters";
+import { siteName, siteDescription, siteUrl } from "@/src/constants/seo";
+
+export const metadata: Metadata = {
+  title: `${siteName} — Capítulos`,
+  description: siteDescription,
+  openGraph: {
+    title: `${siteName} — Capítulos`,
+    description: siteDescription,
+    url: `${siteUrl}/capitulos`,
+    siteName,
+    type: "website",
+  },
+  alternates: {
+    canonical: `${siteUrl}/capitulos`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function Capitulos() {
   return (

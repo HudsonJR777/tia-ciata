@@ -43,6 +43,7 @@ import Image3CorpoCap5 from "./Image3CorpoCap5.png";
 import Image1CorpoCap2 from "./Image1CorpoCap2.png";
 import Image2CorpoCap2 from "./Image2CorpoCap2.png";
 import Image3CorpoCap2 from "./Image3CorpoCap2.png";
+import NadsonImagem from "./NadsonImagem.jpeg";
 
 export {
   logoHeader,
@@ -90,4 +91,5 @@ export {
   Image1CorpoCap2,
   Image2CorpoCap2,
   Image3CorpoCap2,
+  NadsonImagem,
 };

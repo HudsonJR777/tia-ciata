@@ -1,12 +1,53 @@
+import type { Metadata } from "next";
 import { chapters } from "@/src/constants/chapters";
 import { CommonBanner } from "@/src/components/Common";
 import ChapterContent from "@/src/components/ChapterContent";
 import { notFound } from "next/navigation";
+import { siteName, siteDescription, siteUrl } from "@/src/constants/seo";
 
 interface CapituloPageProps {
   params: Promise<{
     id: string;
   }>;
+}
+
+export async function generateMetadata({
+  params,
+}: CapituloPageProps): Promise<Metadata> {
+  const { id } = await params;
+  const chapter = chapters.find((c) => c.id === id);
+
+  if (!chapter) {
+    return {
+      title: `${siteName} — Capítulo`,
+      description: siteDescription,
+    };
+  }
+
+  return {
+    title: `${chapter.title} — ${siteName}`,
+    description: chapter.description || siteDescription,
+    openGraph: {
+      title: chapter.title,
+      description: chapter.description || siteDescription,
+      url: `${siteUrl}/capitulos/${chapter.id}`,
+      siteName,
+      type: "article",
+      images: [
+        {
+          url: `${siteUrl}${chapter.banner.src}`,
+          alt: chapter.title,
+        },
+      ],
+    },
+    alternates: {
+      canonical: `${siteUrl}/capitulos/${chapter.id}`,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
 }
 
 export function generateStaticParams() {

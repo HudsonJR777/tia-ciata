@@ -16,10 +16,10 @@ export const navItems = [
     title: "Capítulos",
     href: ROUTES.CAPITULOS,
   },
-  {
-    title: "Créditos",
-    href: "#",
-  },
+  // {
+  //   title: "Créditos",
+  //   href: "#",
+  // },
   {
     title: "Acervo",
     href: ROUTES.ACERVO,

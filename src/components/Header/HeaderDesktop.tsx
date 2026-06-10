@@ -19,7 +19,7 @@ export default function HeaderDesktop() {
         </Link>
 
         <nav>
-          <ul className="flex items-center gap-8 text-sm font-medium uppercase text-white/80 pr-71.5">
+          <ul className="flex items-center gap-8 text-[18px] font-medium uppercase text-white/80 pr-71.5">
             {navItems.map((item, index) =>
               item.title === "Capítulos" ? (
                 <li key={index} className="relative">
