@@ -7,6 +7,12 @@ import yagoImagem from "../../assets/yagoImagem.jpeg";
 import CamilaImagem from "../../assets/CamilaImagem.jpeg";
 import PatrickImagem from "../../assets/PatrickImagem.jpeg";
 import { AnaCarolinaImage, FilipeDurasImage, NadsonImagem } from "@/src/assets";
+import AugustoImagem from "../../assets/AugustoImagem.jpeg";
+import PavilaImagem from "../../assets/PavilaImagem.jpeg";
+import MariaImagem from "../../assets/MariaImagem.jpeg";
+import MiguelImagem from "../../assets/MiguelImagem.jpeg";
+import MillerImagem from "../../assets/MillerImagem.jpeg";
+import LuizOtavioImagem from "../../assets/LuizOtavioImagem.jpeg";
 
 export const MeetTheTeamCardInfos = [
   {
@@ -25,10 +31,10 @@ export const MeetTheTeamCardInfos = [
     image: LuizImagem,
     name: "Luiz Guilherme",
   },
-  // {
-  //   image: HudsonImagem,
-  //   name: "Maria Vieira",
-  // },
+  {
+    image: MariaImagem,
+    name: "Maria Vieira",
+  },
   {
     image: FilipeDurasImage,
     name: "Filipe Durães",
@@ -50,8 +56,28 @@ export const MeetTheTeamCardInfos = [
     name: "Camila",
   },
   {
+    image: MillerImagem,
+    name: "Marcos",
+  },
+  {
     image: PatrickImagem,
     name: "Ian Patrick",
+  },
+  {
+    image: AugustoImagem,
+    name: "Augusto",
+  },
+  {
+    image: PavilaImagem,
+    name: "Pávila",
+  },
+  {
+    image: MiguelImagem,
+    name: "Miguel",
+  },
+  {
+    image: LuizOtavioImagem,
+    name: "Luiz Otávio",
   },
   {
     image: NadsonImagem,

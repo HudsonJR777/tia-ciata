@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { ChapterBlock } from "@/src/constants/chapters";
+import BatuquePlayer from "@/src/components/BatuquePlayer";
 
 interface ChapterContentProps {
   blocks: ChapterBlock[];
@@ -82,6 +83,60 @@ export default function ChapterContent({ blocks }: ChapterContentProps) {
                   <li key={itemIndex}>{item}</li>
                 ))}
               </ul>
+            );
+
+          case "batuques":
+            return (
+              <BatuquePlayer key={index} batuques={block.batuques} />
+            );
+
+          case "image-pair":
+            return (
+              <div key={index} className="mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 my-8 max-w-4xl">
+                {block.images.map((img, i) => (
+                  <div key={i} className="overflow-hidden rounded-3xl">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      width={img.src.width}
+                      height={img.src.height}
+                      className="h-full w-full object-cover rounded-3xl"
+                    />
+                    {img.caption && (
+                      <p className="mt-3 text-center text-sm text-white/60 italic">
+                        {img.caption}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            );
+          case "image-text":
+            return (
+              <div
+                key={index}
+                className={`flex flex-col sm:flex-row gap-6 my-8 items-start ${
+                  block.imagePosition === "right" ? "sm:flex-row-reverse" : ""
+                }`}
+              >
+                <div className="w-full sm:w-1/4 shrink-0 overflow-hidden rounded-3xl">
+                  <Image
+                    src={block.src}
+                    alt={block.alt}
+                    width={block.src.width}
+                    height={block.src.height}
+                    className="w-full h-auto object-cover rounded-3xl"
+                  />
+                  {block.caption && (
+                    <p className="mt-3 text-center text-sm text-white/60 italic">
+                      {block.caption}
+                    </p>
+                  )}
+                </div>
+                <p className="text-white/70 leading-8 text-sm lg:text-base">
+                  {block.text}
+                </p>
+              </div>
             );
 
           default:

@@ -4,6 +4,7 @@ import chapterImage4 from "@/src/assets/galeriaAcervo4.png";
 import capituloFotoCortico from "@/src/assets/capituloFotoCortico.png";
 import capituloMapaPatrimonio from "@/src/assets/capituloMapaPatrimonio.png";
 import capituloFotoMorro from "@/src/assets/capituloFotoMorro.png";
+import Image4CorpoCap5 from "@/src/assets/Image4CorpoCap5.png";
 import {
   BannerCapitulo1,
   BannerImageCapitulo2,
@@ -20,12 +21,17 @@ import {
   Image3CorpoCap5,
   ImageCorpoCap3,
 } from "../assets";
+import type { Batuque } from "./batuques";
+import { chapter02Batuques } from "./batuques";
 
 export type ChapterBlock =
   | { type: "paragraph"; text: string }
   | { type: "heading"; level: 2 | 3; text: string }
   | { type: "image"; src: StaticImageData; alt: string; caption?: string }
-  | { type: "list"; ordered?: boolean; items: string[] };
+  | { type: "image-pair"; images: { src: StaticImageData; alt: string; caption?: string }[] }
+  | { type: "image-text"; src: StaticImageData; alt: string; caption?: string; text: string; imagePosition?: "left" | "right" }
+  | { type: "list"; ordered?: boolean; items: string[] }
+  | { type: "batuques"; batuques: Batuque[] };
 
 export interface Chapter {
   id: string;
@@ -74,11 +80,19 @@ export const chapters: Chapter[] = [
         text: "Foi nesse chão que Hilária Batista de Almeida, a Tia Ciata, fincou raízes. Nascida em Santo Amaro da Purificação, na Bahia, em 1854, ela chegou ao Rio ainda jovem e logo se tornou uma das figuras centrais dessa diáspora baiana. Sua trajetória encarna o movimento de toda uma geração: a de quem não esperou que o Brasil os reconhecesse, mas tratou de construir, tijolo por tijolo e tambor por tambor, um Brasil que os contivesse.",
       },
       {
-        type: "image",
-        src: capituloFotoMorro,
-        alt: "Fotografia histórica do Morro da Providência durante o Bota-abaixo",
-        caption:
-          'O "Bota-abaixo" do prefeito Pereira Passos destruiu casas e memórias inteiras na virada do século XX.',
+        type: "image-pair",
+        images: [
+          {
+            src: capituloFotoMorro,
+            alt: "Fotografia histórica do Morro da Providência durante o Bota-abaixo",
+            caption: 'O "Bota-abaixo" do prefeito Pereira Passos destruiu casas e memórias inteiras na virada do século XX.',
+          },
+          {
+            src: capituloFotoCortico,
+            alt: "Fotografia histórica de cortiço na Zona Portuária do Rio de Janeiro",
+            caption: "Os cortiços da Zona Portuária foram o primeiro abrigo de muitos migrantes baianos.",
+          },
+        ],
       },
       {
         type: "paragraph",
@@ -88,13 +102,7 @@ export const chapters: Chapter[] = [
         type: "paragraph",
         text: "A Pequena África foi, portanto, muito mais do que um bairro. Foi um ato de resistência geográfica. Um território onde a identidade negra se recusou a ser invisível e onde as bases culturais do Brasil que conhecemos hoje foram silenciosamente assentadas, longe dos holofotes da história oficial e sob o olhar desconfiado de um Estado que fingia não ver o que não queria reconhecer.",
       },
-      {
-        type: "image",
-        src: capituloFotoCortico,
-        alt: "Fotografia histórica de cortiço na Zona Portuária do Rio de Janeiro",
-        caption:
-          "Os cortiços da Zona Portuária foram o primeiro abrigo de muitos migrantes baianos.",
-      },
+      
     ],
   },
   {
@@ -104,26 +112,12 @@ export const chapters: Chapter[] = [
     description: "O Terreiro Expandido: Fé, Comida e Sociabilidade ",
     content: [
       {
-        type: "paragraph",
-        text: "Entrar no casarão número 117 da Rua Visconde de Itaúna, no início do século XX, significava mergulhar em um pedaço da África plantado bem no centro do Rio de Janeiro. Para Tia Ciata e a comunidade de baianos que vivia na região, aquela casa era muito mais do que um simples teto para morar, funcionando como um ponto de chegada para quem buscava um recomeço após o fim da escravidão. Naquela época, o governo tentava apagar as marcas da cultura negra com reformas que destruíam moradias populares e, por isso, ter um lugar de acolhimento era uma forma poderosa de continuar existindo com dignidade.",
-      },
-      {
-        type: "image",
+        type: "image-text",
         src: Image1CorpoCap2,
-        alt: "Interior cultural com artefatos e objetos antigos",
-        caption: "Imagens que representam a vida cotidiana no bairro.",
-      },
-      {
-        type: "paragraph",
-        text: "Tia Ciata exercia uma liderança que ia além do que vemos nos livros de história tradicionais, pois ela era uma respeitada iyálorixá, ou mãe de santo. Essa autoridade religiosa fazia de sua casa o centro de uma grande família de fé, onde os laços de união entre as pessoas muitas vezes eram mais fortes do que o parentesco de sangue. Dentro desse espaço, a religiosidade de matriz africana não ficava guardada em um canto, mas organizava cada detalhe do dia a dia, desde a forma de receber as visitas até o preparo das refeições.",
-      },
-      {
-        type: "paragraph",
-        text: "A cozinha da casa era o verdadeiro coração da hospitalidade e uma fonte de poder. Tia Ciata, sendo uma cozinheira de mão cheia, usava seus tabuleiros de quitutes não apenas para sustentar a família, mas para criar redes de contato que incluíam desde músicos iniciantes até políticos importantes da capital. Essa circulação de pessoas transformava a residência em um território onde negros, judeus, ciganos e intelectuais se encontravam, mostrando como o samba e a comida tinham a capacidade de unir grupos muito diferentes em torno de uma base africana.",
-      },
-      {
-        type: "paragraph",
-        text: "Nesse ambiente, a fé e a arte andavam de mãos dadas de uma forma que não dava para separar. O samba urbano que conhecemos hoje nasceu nesse solo sagrado, sendo uma continuação direta dos rituais de Candomblé que aconteciam no quintal. Os mesmos tambores que invocavam as divindades eram os que faziam vibrar as rodas de música, transformando o samba em uma forma de oração e em uma ferramenta para proteger as tradições contra a perseguição da polícia. Para garantir que essas festas continuassem acontecendo em um período em que a cultura negra era tratada como crime, Tia Ciata usava uma estratégia muito inteligente na divisão da casa. Na sala de visitas, que ficava de frente para a rua e para os olhos das autoridades, praticava-se o choro e as danças que a elite considerava aceitáveis. No entanto, bastava atravessar o corredor para chegar ao quintal, onde o samba de roda e o Candomblé aconteciam livremente, protegidos pelos muros e pelo respeito à hierarquia da casa.",
+        alt: "Imagens que representam as tias baianas",
+        caption: "Imagens que representam as tias baianas",
+        imagePosition: "left",
+        text: "Tia Ciata exercia uma liderança que ia além do que vemos nos livros de história tradicionais, pois ela era uma respeitada iyálorixá, ou mãe de santo. Essa autoridade religiosa fazia de sua casa o centro de uma grande família de fé, onde os laços de união entre as pessoas muitas vezes eram mais fortes do que o parentesco de sangue. Dentro desse espaço, a religiosidade de matriz africana não ficava guardada em um canto, mas organizava cada detalhe do dia a dia, desde a forma de receber as visitas até o preparo das refeições. A cozinha da casa era o verdadeiro coração da hospitalidade e uma fonte de poder. Tia Ciata, sendo uma cozinheira de mão cheia, usava seus tabuleiros de quitutes não apenas para sustentar a família, mas para criar redes de contato que incluíam desde músicos iniciantes até políticos importantes da capital. Essa circulação de pessoas transformava a residência em um território onde negros, judeus, ciganos e intelectuais se encontravam, mostrando como o samba e a comida tinham a capacidade de unir grupos muito diferentes em torno de uma base africana.Nesse ambiente, a fé e a arte andavam de mãos dadas de uma forma que não dava para separar. O samba urbano que conhecemos hoje nasceu nesse solo sagrado, sendo uma continuação direta dos rituais de Candomblé que aconteciam no quintal. Os mesmos tambores que invocavam as divindades eram os que faziam vibrar as rodas de música, transformando o samba em uma forma de oração e em uma ferramenta para proteger as tradições contra a perseguição da polícia. Para garantir que essas festas continuassem acontecendo em um período em que a cultura negra era tratada como crime, Tia Ciata usava uma estratégia muito inteligente na divisão da casa. Na sala de visitas, que ficava de frente para a rua e para os olhos das autoridades, praticava-se o choro e as danças que a elite considerava aceitáveis. No entanto, bastava atravessar o corredor para chegar ao quintal, onde o samba de roda e o Candomblé aconteciam livremente, protegidos pelos muros e pelo respeito à hierarquia da casa.",
       },
       {
         type: "paragraph",
@@ -150,6 +144,10 @@ export const chapters: Chapter[] = [
       {
         type: "paragraph",
         text: "Já o alujá era o toque de Xangô, orixá da justiça e do trovão, com pulsação vibrante e marcial que remetia à força dessa divindade — classificado por Fonseca como linha-guia de 12 batidas, presente nas festas do terreiro nos momentos de maior exaltação. O aguerê, toque de Oxóssi, orixá da caça e das matas, tinha levada mais leve e saltitante, evocando o movimento ágil do caçador. Quando esses quatro toques deixavam o contexto estritamente ritual e passavam a animar as rodas do quintal, carregavam consigo toda uma cosmologia — plantando na música popular brasileira raízes que muitos ouvem até hoje sem reconhecer sua origem nos terreiros. ",
+      },
+      {
+        type: "batuques",
+        batuques: chapter02Batuques,
       },
     ],
   },
@@ -309,9 +307,19 @@ export const chapters: Chapter[] = [
         text: "A herança deixada por Tia Ciata não ficou restrita às memórias do antigo casarão da Rua Visconde de Itaúna, de onde emanaram os acordes de 'Pelo Telefone' e as bases do samba urbano carioca. Esse patrimônio permanece vivo e em constante movimento através das gerações.",
       },
       {
-        type: "image",
-        src: Image3CorpoCap5,
-        alt: "Mapa da casa da Tia Ciata",
+        type: "image-pair",
+        images: [
+          {
+            src: Image3CorpoCap5,
+            alt: "Fotografia da casa da tia ciata atualmente",
+            caption: 'Fotografia da bisneta da tia Ciata na fachada da casa',
+          },
+          {
+            src: Image4CorpoCap5,
+            alt: "Fotografia da casa da tia ciata atualmente",
+            caption: "Fotografia da casa da tia ciata atualmente",
+          },
+        ],
       },
       {
         type: "paragraph",
