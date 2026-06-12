@@ -184,11 +184,11 @@ export const chapters: Chapter[] = [
       },
       {
         type: "paragraph",
-        text: "Tia Ciata entendeu algo que muita gente ainda demora para aprender: resistir não significa sempre confrontar diretamente. Às vezes, resistir é garantir que o que te pertence continue existindo, de um jeito ou de outro, apesar de tudo.",
+        text: "Tia Ciata entendeu algo que muita gente ainda demora para aprender: resistir não significa sempre confrontar diretamente. Às vezes, resistir é assegurar que aquilo a que você pertence continue vivo, de um jeito ou de outro, apesar de tudo.",
       },
       {
         type: "paragraph",
-        text: "O samba que nasceu naquele quintal está em todo lugar hoje. Nas escolas de samba, nos shows, nas ruas, nos sons que você provavelmente já cantou sem saber de onde veio. Essa história chegou até você porque alguém, um dia, teve a sabedoria e a coragem de protegê-la.",
+        text: "O samba nascido naquele quintal hoje ecoa em escolas, palcos, ruas e canções que você já cantou sem conhecer sua raiz. Essa história só chegou até você porque alguém, um dia, soube guardá-la com coragem.",
       },
       {
         type: "paragraph",
