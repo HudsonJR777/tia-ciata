@@ -96,7 +96,7 @@ export const chapters: Chapter[] = [
       },
       {
         type: "paragraph",
-        text: 'A fotografia do "Bota-abaixo" — como ficaram conhecidas as demolições promovidas pelo prefeito Pereira Passos no início do século XX — registra com brutalidade o que esse projeto de modernização eurocêntrico significava na prática: casas derrubadas, famílias despejadas, memórias reduzidas a entulho. Mas o que nenhuma câmera fotografou foi o que acontecia depois da destruição. A capacidade de reunir os fragmentos, de reconstruir em outro lugar o que foi demolido, de manter viva a cosmovisão africana mesmo quando as paredes físicas desapareciam.',
+        text: 'A fotografia do "Bota-abaixo" — como ficaram conhecidas as demolições promovidas pelo prefeito Pereira Passos no início do século XX — registra com brutalidade o que esse projeto de modernização eurocêntrico significava na prática: casas derrubadas, famílias despejadas, memórias reduzidas a entulho. Mas o que nenhuma câmera fotografou foi o que acontecia depois da destruição. A capacidade de reunir os fragmentos, de reconstruir em outro lugar o que foi demolido, de manter viva a cosmopercepção africana mesmo quando as paredes físicas desapareciam.',
       },
       {
         type: "paragraph",
@@ -204,27 +204,23 @@ export const chapters: Chapter[] = [
     content: [
       {
         type: "paragraph",
-        text: "Quando falam sobre Tia Ciata, muita gente lembra apenas do samba. Mas a verdade é que ela foi muito mais do que isso. Imagina viver em uma época em que a sua fé podia fazer a polícia invadir sua casa. Em que tocar samba podia ser motivo de prisão. Em que ser negro e manter suas tradições culturais já era visto como ameaça.",
+        text: "Quando se fala em Tia Ciata, muitos associam seu nome apenas ao samba. Mas sua importância vai muito além disso. Ela viveu em um período em que a prática da fé podia resultar em invasão policial, em que tocar samba era motivo de prisão e em que ser negro e manter tradições culturais era visto como ameaça.",
       },
       {
         type: "paragraph",
-        text: "Foi nesse cenário que Tia Ciata se tornou uma das mulheres mais influentes da cultura negra no Brasil. Diferente da imagem silenciosa que muitas vezes tentam passar dela, Tia Ciata não era apenas uma figura acolhedora ou “boazinha”. Ela era estrategista. Sabia negociar, proteger os seus e usar sua influência para manter viva a cultura negra em um período de muita perseguição.",
+        text: "Nesse contexto, Tia Ciata se consolidou como uma das mulheres mais influentes da cultura negra no Brasil. Ao contrário da imagem passiva que muitas vezes lhe é atribuída, ela foi uma estrategista: sabia negociar, proteger os seus e usar sua influência para garantir a sobrevivência da cultura negra em meio à perseguição.",
       },
       {
         type: "paragraph",
-        text: "Seu poder não vinha de cargos políticos nem de dinheiro. Vinha do respeito. Da sabedoria. Da liderança construída dentro da comunidade preta.",
+        text: "Sua autoridade não vinha de cargos políticos nem de riqueza, mas do respeito conquistado pela sabedoria e pela liderança dentro da comunidade. Reconhecida por seus conhecimentos sobre ervas, benzimentos e práticas de cura ligadas às tradições afro-brasileiras, oferecia cuidado em um momento em que a população negra tinha pouco ou nenhum acesso à saúde pública. Esse papel a tornou uma referência no Rio de Janeiro.",
       },
       {
         type: "paragraph",
-        text: "Conhecida pelos conhecimentos sobre ervas, benzimentos e práticas de cura ligadas às tradições afro-brasileiras, Tia Ciata ajudava pessoas em uma época em que a população negra quase não tinha acesso à saúde ou proteção do Estado. Seu cuidado com os outros fez com que ela se tornasse uma referência importante no Rio de Janeiro.",
+        text: "Sua atuação, no entanto, não se limitava à cura física. Para Tia Ciata, cuidar das pessoas também significava proteger sua identidade, sua fé e sua cultura. Foi nesse ponto que sua inteligência política se destacou.",
       },
       {
         type: "paragraph",
-        text: "Mas sua atuação ia muito além da cura física. Tia Ciata entendia que cuidar das pessoas também era proteger sua cultura, sua fé e sua identidade. E foi justamente aí que sua inteligência política apareceu.",
-      },
-      {
-        type: "paragraph",
-        text: "Existe um episódio muito conhecido envolvendo o presidente Venceslau Brás. Segundo relatos históricos e tradições orais, o presidente sofria com uma ferida na perna que não melhorava, mesmo após diversos tratamentos médicos. Foi então que indicaram Tia Ciata, já reconhecida pelos seus conhecimentos tradicionais de cura. Ela teria sido chamada até o Palácio do Catete, sede do governo federal na época, para ajudar no tratamento do presidente. Em uma sociedade extremamente racista, esse episódio teve um peso enorme. Uma mulher negra, ligada a práticas perseguidas pelo preconceito, agora era procurada por alguém do mais alto nível político do país. Depois da recuperação de Venceslau Brás, Tia Ciata ganhou ainda mais respeito e influência social. Mas o mais importante foi a maneira inteligente como ela utilizou esse reconhecimento.",
+        text: "Um episódio marcante envolve o presidente Venceslau Brás. Segundo relatos históricos e tradições orais, ele sofria de uma ferida na perna que não cicatrizava, mesmo após diversos tratamentos médicos. Indicaram então Tia Ciata, já reconhecida por seus saberes tradicionais. Ela teria sido chamada ao Palácio do Catete para auxiliar no tratamento. Em uma sociedade profundamente racista, o fato de uma mulher negra, ligada a práticas perseguidas, ser procurada pelo chefe de Estado teve enorme impacto. Após a recuperação do presidente, Tia Ciata ampliou ainda mais seu prestígio e influência social. Mais significativo, porém, foi a forma como soube transformar esse reconhecimento em força para proteger e afirmar a cultura negra.",
       },
       {
         type: "image",
@@ -233,7 +229,7 @@ export const chapters: Chapter[] = [
       },
       {
         type: "paragraph",
-        text: "Naquele período, o samba e as manifestações culturais negras eram constantemente perseguidos pela polícia. As rodas de samba eram vistas pelas elites como algo “perigoso”, e encontros ligados às religiões afro-brasileiras sofriam repressão. Com o prestígio conquistado, Tia Ciata conseguiu mais proteção para sua casa e para os encontros culturais realizados ali. Sua influência ajudou a diminuir perseguições contra o samba, os encontros religiosos e as tradições afro-brasileiras.",
+        text: "Naquele período, o samba e outras manifestações culturais negras eram alvo constante da repressão policial. As rodas de samba eram classificadas pelas elites como práticas “perigosas”, e os encontros ligados às religiões afro-brasileiras sofriam perseguições sistemáticas. Com o prestígio que conquistou, Tia Ciata conseguiu garantir maior proteção para sua casa e para os encontros culturais realizados ali. Sua influência foi decisiva para reduzir a intensidade das perseguições contra o samba, as práticas religiosas e as tradições afro-brasileiras.",
       },
       {
         type: "image",
@@ -242,19 +238,15 @@ export const chapters: Chapter[] = [
       },
       {
         type: "paragraph",
-        text: "Enquanto muitos tentavam apagar tudo que vinha da cultura negra, Tia Ciata encontrava maneiras inteligentes de garantir que essas tradições sobrevivessem.",
+        text: "Enquanto muitos buscavam apagar as expressões da cultura negra, Tia Ciata desenvolveu estratégias para assegurar a sobrevivência dessas tradições. Reduzir sua trajetória à imagem de uma “tia do samba” é limitar sua real importância histórica.",
       },
       {
         type: "paragraph",
-        text: "Por isso, enxergar Tia Ciata apenas como uma “tia do samba” diminui sua verdadeira importância histórica.",
+        text: "Ela foi articuladora cultural, liderança comunitária e estrategista. Uma mulher negra que transformou cuidado, sabedoria e conhecimento ancestral em instrumentos de resistência e proteção cultural.",
       },
       {
         type: "paragraph",
-        text: "Ela foi articuladora cultural. Foi liderança comunitária. Foi estrategista. Foi uma mulher negra que transformou cuidado, sabedoria e conhecimento ancestral em formas de resistência e proteção cultural.",
-      },
-      {
-        type: "paragraph",
-        text: "Seu legado mostra que resistir nem sempre acontece no grito. Às vezes, acontece no cuidado, na união e na capacidade de abrir caminhos para que o seu povo continue existindo. E até hoje, quando o samba ocupa espaços e a cultura negra ganha voz, existe um pouco da força de Tia Ciata presente nessa história.",
+        text: "Seu legado evidencia que a resistência não se manifesta apenas em confrontos diretos. Muitas vezes, ela se constrói no cuidado, na união e na capacidade de abrir caminhos para que um povo continue existindo. Ainda hoje, quando o samba ocupa espaços e a cultura negra se afirma, há a presença da força de Tia Ciata nessa história",
       },
     ],
   },
