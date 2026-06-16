@@ -62,7 +62,7 @@ export default function Extras() {
           {/* Título da seção */}
           <div className="flex items-center gap-3 mb-10">
             <span className="text-white text-lg">✳</span>
-            <h2 className="text-white text-xs lg:text-sm font-bold uppercase tracking-[0.22em]">
+            <h2 className="text-white text-xs lg:text-[20px] font-bold uppercase tracking-[0.22em]">
               Do Passado ao Futuro: Representatividade e Tecnologia
             </h2>
           </div>
@@ -77,7 +77,7 @@ export default function Extras() {
             />
 
             <div className="flex flex-col gap-5">
-              <p className="text-white/80 text-sm lg:text-base leading-relaxed">
+              <p className="text-white/80 text-sm lg:text-xl leading-relaxed">
                 O legado de <strong className="text-white">Tia Ciata</strong>{" "}
                 nos lembra da importância da representatividade e do
                 reconhecimento de grupos historicamente marginalizados. Hoje,

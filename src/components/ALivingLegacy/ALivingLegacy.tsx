@@ -24,13 +24,13 @@ export default function ALivingLegacy() {
               <br />
               Continua Vivo
             </h2>
-            <p className="mt-6 text-sm leading-6 text-white sm:text-base sm:leading-7 md:text-lg md:leading-8">
+            <p className="font-medium mt-6 text-sm leading-6 text-white sm:text-base sm:leading-7 md:text-[24px] md:leading-8">
               A história de Tia Ciata atravessou gerações e ajudou a moldar a
               cultura brasileira. Sua influência permanece presente no samba, na
               religiosidade afro-brasileira e na identidade de um povo que
               transformou resistência em arte.
             </p>
-            <button className="cursor-pointer mt-10 inline-flex rounded-full bg-white px-8 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-black transition hover:bg-[#f5f5f5] md:px-10 md:py-4">
+            <button className="cursor-pointer mt-10 inline-flex rounded-full bg-white px-8 py-3 text-xl font-semibold uppercase tracking-[0.18em] text-black transition hover:bg-[#f5f5f5] md:px-10 md:py-4">
               Conheça seu legado
             </button>
           </div>

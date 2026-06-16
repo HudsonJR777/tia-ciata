@@ -51,7 +51,7 @@ export default function Capitulos() {
                   <h2 className="text-[#FEC40F] font-bold text-lg mb-2 group-hover:text-yellow-300 transition-colors">
                     {chapter.title}
                   </h2>
-                  <p className="text-white/60 text-sm group-hover:text-white/80 transition-colors">
+                  <p className="text-white/60 text-sm lg:text-2xl group-hover:text-white/80 transition-colors">
                     {chapter.description}
                   </p>
                 </div>

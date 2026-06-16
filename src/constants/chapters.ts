@@ -28,8 +28,18 @@ export type ChapterBlock =
   | { type: "paragraph"; text: string }
   | { type: "heading"; level: 2 | 3; text: string }
   | { type: "image"; src: StaticImageData; alt: string; caption?: string }
-  | { type: "image-pair"; images: { src: StaticImageData; alt: string; caption?: string }[] }
-  | { type: "image-text"; src: StaticImageData; alt: string; caption?: string; text: string; imagePosition?: "left" | "right" }
+  | {
+      type: "image-pair";
+      images: { src: StaticImageData; alt: string; caption?: string }[];
+    }
+  | {
+      type: "image-text";
+      src: StaticImageData;
+      alt: string;
+      caption?: string;
+      text: string;
+      imagePosition?: "left" | "right";
+    }
   | { type: "list"; ordered?: boolean; items: string[] }
   | { type: "batuques"; batuques: Batuque[] };
 
@@ -85,12 +95,14 @@ export const chapters: Chapter[] = [
           {
             src: capituloFotoMorro,
             alt: "Fotografia histórica do Morro da Providência durante o Bota-abaixo",
-            caption: 'O "Bota-abaixo" do prefeito Pereira Passos destruiu casas e memórias inteiras na virada do século XX.',
+            caption:
+              'O "Bota-abaixo" do prefeito Pereira Passos destruiu casas e memórias inteiras na virada do século XX.',
           },
           {
             src: capituloFotoCortico,
             alt: "Fotografia histórica de cortiço na Zona Portuária do Rio de Janeiro",
-            caption: "Os cortiços da Zona Portuária foram o primeiro abrigo de muitos migrantes baianos.",
+            caption:
+              "Os cortiços da Zona Portuária foram o primeiro abrigo de muitos migrantes baianos.",
           },
         ],
       },
@@ -102,7 +114,6 @@ export const chapters: Chapter[] = [
         type: "paragraph",
         text: "A Pequena África foi, portanto, muito mais do que um bairro. Foi um ato de resistência geográfica. Um território onde a identidade negra se recusou a ser invisível e onde as bases culturais do Brasil que conhecemos hoje foram silenciosamente assentadas, longe dos holofotes da história oficial e sob o olhar desconfiado de um Estado que fingia não ver o que não queria reconhecer.",
       },
-      
     ],
   },
   {
@@ -163,7 +174,7 @@ export const chapters: Chapter[] = [
       },
       {
         type: "paragraph",
-        text: "Era exatamente isso que acontecia no Rio de Janeiro do início do século XX. O samba, aquele ritmo que hoje é símbolo do Brasil para o mundo inteiro, era perseguido. Os tambores podiam ser apreendidos, quem dançasse, tocasse ou celebrasse as tradições afro-brasileiras corria o risco de ser detido pela polícia. A cultura negra estava na mira.",
+        text: "Era exatamente isso que acontecia no Rio de Janeiro do início do século XX. O samba, aquele ritmo que hoje é símbolo do Brasil para o mundo inteiro, era perseguido. Os tambores poderiam ser apreendidos, quem dançasse, tocasse ou celebrasse as tradições afro-brasileiras corria o risco de ser detido pela polícia. A cultura negra estava na mira.",
       },
       {
         type: "paragraph",
@@ -246,7 +257,7 @@ export const chapters: Chapter[] = [
       },
       {
         type: "paragraph",
-        text: "Seu legado evidencia que a resistência não se manifesta apenas em confrontos diretos. Muitas vezes, ela se constrói no cuidado, na união e na capacidade de abrir caminhos para que um povo continue existindo. Ainda hoje, quando o samba ocupa espaços e a cultura negra se afirma, há a presença da força de Tia Ciata nessa história",
+        text: "Seu legado evidencia que a resistência não se manifesta apenas em confrontos diretos. Muitas vezes, ela se constrói no cuidado, na união e na capacidade de abrir caminhos para que um povo continue existindo. Ainda hoje, quando o samba ocupa espaços e a cultura negra se afirma, há a presença da força de Tia Ciata nessa história.",
       },
     ],
   },
@@ -304,7 +315,7 @@ export const chapters: Chapter[] = [
           {
             src: Image3CorpoCap5,
             alt: "Fotografia da casa da tia ciata atualmente",
-            caption: 'Fotografia da bisneta da tia Ciata na fachada da casa',
+            caption: "Fotografia da bisneta da tia Ciata na fachada da casa",
           },
           {
             src: Image4CorpoCap5,

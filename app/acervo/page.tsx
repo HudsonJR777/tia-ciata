@@ -32,7 +32,7 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-10">
       <span className="text-white text-lg">✳</span>
-      <h2 className="text-white text-xs lg:text-sm font-bold uppercase tracking-[0.22em]">
+      <h2 className="text-white text-xs lg:text-[20px] font-bold uppercase tracking-[0.22em]">
         {children}
       </h2>
     </div>
@@ -73,59 +73,58 @@ export default function AcervoPage() {
 
         <section className="container-section py-12 lg:py-16">
           <SectionTitle>Galeria do Acervo</SectionTitle>
-          <div className="flex flex-col gap-2">
-            <div className="grid grid-cols-[3fr_2fr] gap-2 h-[600px]">
-              <div className="overflow-hidden rounded-2xl border border-white/10">
-                <Image
-                  src={galeriaAcervo1}
-                  alt="Galeria Acervo 1"
-                  width={1824}
-                  height={1292}
-                  priority
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              <div className="overflow-hidden rounded-2xl border border-white/10">
-                <Image
-                  src={galeriaAcervo2}
-                  alt="Galeria Acervo 2"
-                  width={896}
-                  height={1292}
-                  priority
-                  className="w-full h-full object-cover object-[50%_10%]"
-                />
-              </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-2 auto-rows-[300px]">
+            <div className="md:col-span-3 md:row-span-2 overflow-hidden rounded-2xl border border-white/10">
+              <Image
+                src={galeriaAcervo1}
+                alt="Galeria Acervo 1"
+                width={1824}
+                height={1292}
+                priority
+                className="w-full h-full object-cover object-top"
+              />
             </div>
-            <div className="grid grid-cols-2 gap-2 items-start">
-              <div className="overflow-hidden rounded-2xl border border-white/10">
-                <Image
-                  src={galeriaAcervo3}
-                  alt="Galeria Acervo 3"
-                  width={1824}
-                  height={2476}
-                  className="w-full h-auto"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <div className="overflow-hidden rounded-2xl border border-white/10">
-                  <Image
-                    src={galeriaAcervo4}
-                    alt="Galeria Acervo 4"
-                    width={896}
-                    height={1968}
-                    className="w-full h-auto"
-                  />
-                </div>
-                <div className="overflow-hidden rounded-2xl border border-white/10">
-                  <Image
-                    src={galeriaAcervo5}
-                    alt="Mapa Pequena África"
-                    width={1023}
-                    height={483}
-                    className="w-full h-auto"
-                  />
-                </div>
-              </div>
+
+            <div className="md:col-span-2 md:row-span-2 overflow-hidden rounded-2xl border border-white/10">
+              <Image
+                src={galeriaAcervo2}
+                alt="Galeria Acervo 2"
+                width={896}
+                height={1292}
+                priority
+                className="w-full h-full object-cover object-[50%_10%]"
+              />
+            </div>
+
+            <div className="md:col-span-2 overflow-hidden rounded-2xl border border-white/10">
+              <Image
+                src={galeriaAcervo3}
+                alt="Galeria Acervo 3"
+                width={1824}
+                height={2476}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="md:col-span-1 overflow-hidden rounded-2xl border border-white/10">
+              <Image
+                src={galeriaAcervo4}
+                alt="Galeria Acervo 4"
+                width={896}
+                height={1968}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="md:col-span-2 overflow-hidden rounded-2xl border border-white/10">
+              <Image
+                src={galeriaAcervo5}
+                alt="Mapa Pequena África"
+                width={1023}
+                height={483}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </section>
