@@ -95,6 +95,21 @@ const features = [
   },
 ];
 
+const references = [
+  "TIA CIATA. Direção: Mariana Campos e Raquel Beatriz. Rio de Janeiro: Encouraçado Filmes, 2017. Filme/Documentário (25 min).",
+  "BAKKE, Rachel Rua Baptista. Tem Orixá no samba: Clara Nunes e a presença do candomblé e da umbanda na música popular brasileira. Religião e Sociedade, Rio de Janeiro, v. 27, n. 2, p. 85-113, 2007.",
+  "CARVALHO, José Jorge de. Um panorama da música afro-brasileira: Parte 1. Dos gêneros tradicionais aos primórdios do samba. Brasília: Departamento de Antropologia, Instituto de Ciências Sociais, Universidade de Brasília, 2000. (Série Antropologia, 275).",
+  "DANTAS, Jéssica Ramos da Silva; NASCIMENTO, Leonardo Ramos. Tia Ciata, representatividade e resistência: a ascensão do candomblé na cidade do Rio de Janeiro no início do século XX. Sankofa: Revista de História, v. 1, n. 3, p. 28-46, 2019.",
+  "GOMES, Tiago de Melo. Para além da casa da Tia Ciata: outras experiências no universo cultural carioca, 1830-1930. Afro-Ásia, Salvador, n. 29/30, p. 175-198, 2003.",
+  "JACARANDÁ, Gabriel Monteiro. O canto no samba do trabalhador: a relação ancestral entre samba, candomblé e religiões afro-brasileiras – caminhos para uma educação musical antirracista. 2024. 220 f. Dissertação (Mestrado em Ensino e Aprendizagem de Música) – Universidade Federal do Estado do Rio de Janeiro (UNIRIO), Rio de Janeiro, 2024.",
+  "ROCHA, Fabiana Ferreira. A participação feminina na origem do samba carioca: das rodas de batuque de Tia Ciata às modinhas de Chiquinha Gonzaga. In: ENCONTRO DE PESQUISA EM HISTÓRIA: HISTORIOGRAFIA E FONTES HISTÓRICAS, 3., 2015, Bauru. Anais... Bauru: Universidade do Sagrado Coração, 2015. p. 10-22.",
+  "SILVA, Wallace Lopes. 'Praças negras': territórios e fronteiras nas margens da 'pequena África' de Tia Ciata (1890-1930). 2014. 107 f. Dissertação (Mestrado em Relações Etnicorraciais) – Centro Federal de Educação Tecnológica Celso Suckow da Fonseca (CEFET/RJ), Rio de Janeiro, 2014.",
+  "UNIVERSIDADE DE SÃO PAULO. Biblioteca Florestan Fernandes. Tia Ciata. São Paulo: USP, [s.d.]. Disponível em: https://biblioteca.fflch.usp.br/tiaciata. Acesso em: 16 jun. 2026.",
+  "FUNDAÇÃO CULTURAL PALMARES. Personalidades negras: Tia Ciata. Brasília: Fundação Cultural Palmares, [s.d.]. Disponível em: https://www.gov.br/palmares/pt-br/assuntos/noticias/personalidades-negras-2013-tia-ciata. Acesso em: 16 jun. 2026.",
+  "INSTITUTO DO PATRIMÔNIO HISTÓRICO E ARTÍSTICO NACIONAL. Samba do Rio de Janeiro é patrimônio cultural do Brasil. Brasília: IPHAN, [s.d.]. Disponível em: https://portal.iphan.gov.br/noticias/detalhes/1941/samba-do-rio-de-janeiro-e-patrimonio-cultural-do-brasil. Acesso em: 16 jun. 2026.",
+  "JORNAL DA USP. Samba traz em sua história a marca do protagonismo feminino. São Paulo: Universidade de São Paulo, [s.d.]. Disponível em: https://jornal.usp.br/diversidade/samba-traz-em-sua-historia-a-marca-do-protagonismo-feminino/. Acesso em: 16 jun. 2026.",
+];
+
 export default function Sobre() {
   return (
     <div className="bg-[#0a0a0a] min-h-screen text-white">
@@ -194,6 +209,37 @@ export default function Sobre() {
             </div>
           </div>
           <MeetTheTeam />
+        </section>
+
+        {/* Referências Bibliográficas */}
+        <section className="container-section py-16 lg:py-24">
+          <div className="flex items-center gap-3 mb-12">
+            <span className="text-white text-lg">✳</span>
+            <h2 className="text-white text-xs lg:text-sm font-bold uppercase tracking-[0.22em]">
+              Referências Bibliográficas
+            </h2>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <p className="text-white/60 text-sm lg:text-base leading-relaxed mb-10">
+              As informações apresentadas nesta plataforma foram fundamentadas em
+              pesquisas acadêmicas e produções audiovisuais dedicadas à história de
+              Tia Ciata, do samba e das religiões afro-brasileiras.
+            </p>
+
+            <div className="space-y-4">
+              {references.map((reference, index) => (
+                <article
+                  key={index}
+                  className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-colors hover:border-white/20 hover:bg-white/[0.05]"
+                >
+                  <p className="text-sm lg:text-base leading-relaxed text-white/80">
+                    {reference}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
         </section>
       </main>
     </div>
